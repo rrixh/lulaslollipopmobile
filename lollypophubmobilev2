@@ -49,6 +49,28 @@ SkriptsSection:NewButton("R15 to R6", "only work if u are r15",
 function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua", true))()
 end)
 
+SkriptsSection:NewButton("Noklip", "thru walls and objs",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/3wf2wpBW"))()
+end)
+
+SkriptsSection:NewButton("Spektate", "spektate players",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/daM0ut53"))()
+end)
+
+
+
+SkriptsSection:NewButton("Show Usernames", "shows all usernames and esp",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/hpMC6ULU"))()
+end)
+
+SkriptsSection:NewButton("Shadow ESP", "see players thru walls but shadows",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/QQqiFGTE"))()
+end)
+
+SkriptsSection:NewButton("Purple ESP", "see players highlighted purple",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/7K1Jhmck"))()
+end)
+
 
 
 
@@ -101,7 +123,28 @@ getgenv().dmsgs = {
 --[[
 Auto-Exkuse
 ]]--
-loadstring(game:HttpGet("https://raw.githubusercontent.com/goldmoments/auto-excuse/main/Script"))("Auto-Excuse Script | flamespill#7488") 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/goldmoments/auto-excuse/main/Script"))("Auto-Exkuse Script | lulaslollipoo#0140") 
+end)
+
+FunSection:NewButton("🤓", "nerd quote", function()local ReplicatedStorage = game:FindService("ReplicatedStorage")
+local ChatEvents = ReplicatedStorage:WaitForChild("DefaultChatSystemChatEvents")
+local OnMessageEvent = ChatEvents:WaitForChild("OnMessageDoneFiltering")
+local SayMessageRequest = ChatEvents:WaitForChild("SayMessageRequest")
+
+if not SayMessageRequest:IsA("RemoteEvent") or not OnMessageEvent:IsA("RemoteEvent") then return end
+
+local ChatLegth = require(game:FindService("Chat"):WaitForChild("ClientChatModules"):WaitForChild("ChatSettings")).MaximumMessageLength
+local lp = game:FindService("Players").LocalPlayer.Name
+
+OnMessageEvent.OnClientEvent:Connect(function(data)
+    if not data then return end
+    local player = tostring(data.FromSpeaker)
+    if player == lp then return end
+    local message = tostring(data.Message)
+    if (message):len() <= (ChatLegth-7) then
+        SayMessageRequest:FireServer(('\"%s\"%s'):format(message,"🤓"),tostring(data.OriginalChannel))
+    end
+end)
 end)
 
 FunSection:NewButton("Rainbow", "enables xhat bubble and see msg frm far away", function()
@@ -371,6 +414,14 @@ FeSection:NewButton("FE Portal Gun", "type user first and shoot gun to tp to the
 loadstring(game:HttpGet("https://pastebin.com/raw/H9B4aGij"))()
 end)
 
+FeSection:NewButton("FE Krazy", "by dark", function()
+loadstring(game:HttpGet("https://textbin.net/raw/rdssq0b2em"))()
+end)
+
+FeSection:NewButton("FE Kreepy Krawler", "turns u into kreepy krawler", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/rzcFPsLn"))()
+end)
+
 FeSection:NewButton("FE Avatar Kreator", "move your axxessories anywhere", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/TTQn3RDk"))()
 end)
@@ -418,7 +469,7 @@ end)
 OvasSection:NewButton("😈", "😈😈😈😈😈", function()
 -- FE LAG CRASH SERVER | Makes the game lag for every player eventually making them crash or leave.
 -- (Should work on any game with default roblox chat)
--- YouTube : darkModz
+-- yeah
 
  while wait() do
 local Message = "😈"
@@ -435,6 +486,21 @@ if SayMessageRequest then
 end
 wait(math.random(12,14))
 end
+end)
+
+local Home = Window:NewTab("Home")
+local HomeSection = Home:NewSection("Note: more skripts will be added soon")
+Home:NewSection("Skripts")
+
+HomeSection:NewButton("Ping Kounter", "see ping", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MvKKJ331"))()
+end)
+
+local Stats = script.Parent.Stats
+local StatsButton = script.Parent.StatsButton
+
+script.Parent.StatsButton.MouseButton1Down:Connect(function()
+    script.Parent.Stats.Visible = not script.Parent.Stats.Visible
 end)
 
 
