@@ -51,6 +51,7 @@ end)
 
 
 
+
 -- admin skripts
 local Admin = Window:NewTab("Admin")
 local AdminSection = Admin:NewSection("Admin Kommands")
@@ -277,6 +278,13 @@ ToolsSection:NewButton("Tp To Player GUI", "equip and press to tele anywhere", f
 loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()
 end)
 
+ToolsSection:NewButton("Invisible Tool", "hides and unhides your body in the air", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/LraZZsaZ",true))()
+end)
+
+ToolsSection:NewButton("Disabled Tools", "key:AdminTools", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/0BsHnxbk'))()
+end)
 
 
 -- hubs and gui
@@ -323,6 +331,10 @@ GamesSection:NewButton("KAT GUI", "esp,spam shoot (aimbot💻)", function()--kat
 loadstring(game:HttpGet("https://pastebin.com/raw/78kG7trR"))()
 end)
 
+GamesSection:NewButton("DaHood Reborn", "dahood aimloxk", function()loadstring(game:HttpGet("https://pastebin.com/raw/iNd3xTPv"))()
+end)
+
+
 
 
 -- FE SKRIPTS
@@ -367,6 +379,14 @@ FeSection:NewButton("FE Mimik GUI", "kopy users messages", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./2520c121ab919b2b9697ab5c70797dcfdaa5db43/Ohio'))()
 end)
 
+FeSection:NewButton("FE Message Art", "turn text into art", function()
+loadstring(game:HttpGet("https://textbin.net/raw/hmtw3zllmp",true))()
+end)
+
+FeSection:NewButton("FE Invisible GUI & Teleport", "any game *op*", function()-- FE Invisible GUI & Teleport R15/R6 | ANY GAME *OP*
+loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./dbb6ce6f6cee4f7a5c9e20d7b88e83db2a93bf25/Invisible%20GUI'))()
+end)
+
 
 
 
@@ -385,6 +405,10 @@ end)
 
 OvasSection:NewButton("noOoOoOoOoooooOoOo", "fling a player by walking into them", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+end)
+
+OvasSection:NewButton("noOoOoOoOoooooOoOo 2", "fling a player by pressing them", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
 end)
 
 Section:NewKeybind("Toggle", "toggle", Enum.KeyCode.F, function()
