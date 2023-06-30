@@ -407,6 +407,10 @@ end)
 GamesSection:NewButton("DaHood Reborn", "dahood aimloxk", function()loadstring(game:HttpGet("https://pastebin.com/raw/iNd3xTPv"))()
 end)
 
+GamesSection:NewButton("P.E.T", "yum", function()-- pankake
+loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Utilities/main/Closed/Pancake%20Empire%20Tower%20Tycoon.lua"))()
+end)
+
 
 
 
