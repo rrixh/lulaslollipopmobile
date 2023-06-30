@@ -26,6 +26,11 @@ end)
 
 local SkriptsSection = Skripts:NewSection("Skripts")
 
+SkriptsSection:NewButton("Universal Aimbot", "simple aimbot skript by me", function()
+-- AIMBOT by lulaslollipop
+loadstring(game:HttpGet("https://textbin.net/raw/uv6wy7lbdb"))()
+end)
+
 SkriptsSection:NewButton("Fly GUI V3", "mobile fly",
 function()-- fly gui v3 
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FLY-GUI-V3-8402"))()
@@ -126,7 +131,28 @@ Auto-Exkuse
 loadstring(game:HttpGet("https://raw.githubusercontent.com/goldmoments/auto-excuse/main/Script"))("Auto-Exkuse Script | lulaslollipoo#0140") 
 end)
 
-FunSection:NewButton("🤓", "nerd quote", function()local ReplicatedStorage = game:FindService("ReplicatedStorage")
+FunSection:NewButton("Kopy Messages", "repeats all players messages", function()local ReplicatedStorage = game:FindService("ReplicatedStorage")
+local ChatEvents = ReplicatedStorage:WaitForChild("DefaultChatSystemChatEvents")
+local OnMessageEvent = ChatEvents:WaitForChild("OnMessageDoneFiltering")
+local SayMessageRequest = ChatEvents:WaitForChild("SayMessageRequest")
+
+if not SayMessageRequest:IsA("RemoteEvent") or not OnMessageEvent:IsA("RemoteEvent") then return end
+
+local ChatLegth = require(game:FindService("Chat"):WaitForChild("ClientChatModules"):WaitForChild("ChatSettings")).MaximumMessageLength
+local lp = game:FindService("Players").LocalPlayer.Name
+
+OnMessageEvent.OnClientEvent:Connect(function(data)
+    if not data then return end
+    local player = tostring(data.FromSpeaker)
+    if player == lp then return end
+    local message = tostring(data.Message)
+    if (message):len() <= (ChatLegth-7) then
+        SayMessageRequest:FireServer(('\%s'):format(message,""),tostring(data.OriginalChannel))
+    end
+end)
+end)
+
+FunSection:NewButton("Nerd Quote", " repeats all msgs with a nerd quote", function()local ReplicatedStorage = game:FindService("ReplicatedStorage")
 local ChatEvents = ReplicatedStorage:WaitForChild("DefaultChatSystemChatEvents")
 local OnMessageEvent = ChatEvents:WaitForChild("OnMessageDoneFiltering")
 local SayMessageRequest = ChatEvents:WaitForChild("SayMessageRequest")
@@ -388,7 +414,12 @@ end)
 local Fe = Window:NewTab("FE")
 local FeSection = Fe:NewSection("FE Skripts")
 
-FeSection:NewButton("FE Time Reverse", "reverses what u do", function()
+FeSection:NewButton("Fish", "(need hat) Parrot Fishfaxe", function()
+-- fe fish
+loadstring(game:HttpGet(('https://pastefy.app/yrp6En96/raw'),true))()
+end)
+
+FeSection:NewButton("Time Reverse", "reverses what u do", function()
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
 Library.DefaultColor = Color3.fromRGB(0,255,0)
 
@@ -410,35 +441,35 @@ Library:Notification({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/L"))()
 end)
 
-FeSection:NewButton("FE Portal Gun", "type user first and shoot gun to tp to them", function()
+FeSection:NewButton("Portal Gun", "type user first and shoot gun to tp to them", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/H9B4aGij"))()
 end)
 
-FeSection:NewButton("FE Krazy", "by dark", function()
+FeSection:NewButton("Krazy", "by dark", function()
 loadstring(game:HttpGet("https://textbin.net/raw/rdssq0b2em"))()
 end)
 
-FeSection:NewButton("FE Kreepy Krawler", "turns u into kreepy krawler", function()
+FeSection:NewButton("Kreepy Krawler", "turns u into kreepy krawler", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/rzcFPsLn"))()
 end)
 
-FeSection:NewButton("FE Avatar Kreator", "move your axxessories anywhere", function()
+FeSection:NewButton("Avatar Kreator", "move your axxessories anywhere", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/TTQn3RDk"))()
 end)
 
-FeSection:NewButton("FE Kamera Slider", "yeah", function()
+FeSection:NewButton("Kamera Slider", "yeah", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/Camera%20Sliders.lua"))()
 end)
 
-FeSection:NewButton("FE Mimik GUI", "kopy users messages", function()
+FeSection:NewButton("Mimik GUI", "kopy users messages", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./2520c121ab919b2b9697ab5c70797dcfdaa5db43/Ohio'))()
 end)
 
-FeSection:NewButton("FE Message Art", "turn text into art", function()
+FeSection:NewButton("Message Art", "turn text into art", function()
 loadstring(game:HttpGet("https://textbin.net/raw/hmtw3zllmp",true))()
 end)
 
-FeSection:NewButton("FE Invisible GUI & Teleport", "any game *op*", function()-- FE Invisible GUI & Teleport R15/R6 | ANY GAME *OP*
+FeSection:NewButton("Invisible & Teleport GUI", "any game *op*", function()-- FE Invisible GUI & Teleport R15/R6 | ANY GAME *OP*
 loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./dbb6ce6f6cee4f7a5c9e20d7b88e83db2a93bf25/Invisible%20GUI'))()
 end)
 
@@ -451,11 +482,6 @@ local OvasSection = Ovas:NewSection("Others")
 
 OvasSection:NewButton("Universal Spy GUI", "player list gui", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy gui.lua"))()
-end)
-
-OvasSection:NewButton("Universal Aimbot", "simple aimbot skript", function()
--- AIMBOT by lulaslollipop
-loadstring(game:HttpGet("https://textbin.net/raw/uv6wy7lbdb"))()
 end)
 
 OvasSection:NewButton("noOoOoOoOoooooOoOo", "fling a player by walking into them", function()
