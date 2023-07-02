@@ -31,6 +31,10 @@ end)
 
 local SkriptsSection = Skripts:NewSection("Skripts")
 
+SkriptsSection:NewButton("WALKSPEED GUI", "+ -", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/2gGvc9ya"))()
+end)
+
 SkriptsSection:NewButton("Mood Switxher", "yellow grey", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/djAd7g2W'))()
 end)
