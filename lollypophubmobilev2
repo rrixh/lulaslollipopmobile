@@ -48,6 +48,11 @@ SkriptsSection:NewButton("Fly GUI B&W", "modded",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/TeNifRrX"))()
 end)
 
+SkriptsSection:NewButton("FLY HD ADMIN", "mobile fly HD ADMIN version",
+function()-- FLY HD ADMIN
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TakeModzz/Ignore-00000/main/Ignore"))()
+end)
+
 SkriptsSection:NewButton("Universal Fly GUI", "speed setter",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/YvKv4AuY"))()
 end)
@@ -123,13 +128,8 @@ SkriptsSection:NewButton("SAVE TELEPORT LOKATION", "stand where u want and push 
 function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Tp%20Place%20GUI'),true))()
 end)
 
-SkriptsSection:NewButton("STEAL TOOLS FROM PLAYERS", "works if player has tools (tools=items)",
-function()for i,v in pairs (game.Players:GetChildren()) do
-wait()
-for i,b in pairs (v.Backpack:GetChildren()) do
-b.Parent = game.Players.LocalPlayer.Backpack
-end
-end
+SkriptsSection:NewButton("Spy CCTV Kamera", "spy",
+function()loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/CCTV%20Camera'))()
 end)
 
 SkriptsSection:NewButton("TOGGLE INVISIBILITY", "others wont see bloxks",
@@ -650,6 +650,15 @@ end)
 GamesSection:NewButton("Adopt Me - Fly Ride Pets", "fly ability for all pets", function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/adoptmegui1'),true))()
 end)
 
+SkriptsSection:NewButton("Prison Life - STEAL TOOLS", "works if player has tools (tools=items)",
+function()for i,v in pairs (game.Players:GetChildren()) do
+wait()
+for i,b in pairs (v.Backpack:GetChildren()) do
+b.Parent = game.Players.LocalPlayer.Backpack
+end
+end
+end)
+
 
 
 
@@ -664,6 +673,10 @@ end)
 FeSection:NewButton("FE Fish", "(need hat) Parrot Fishfaxe", function()
 -- fe fish
 loadstring(game:HttpGet(('https://pastefy.app/yrp6En96/raw'),true))()
+end)
+
+FeSection:NewButton("FE Korblox", "need korblox rekolor for 65 robux", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/0NzfiZJn"))()
 end)
 
 FeSection:NewButton("FE Baxkflip/Frontflip", "baxk and frontflip", function()
