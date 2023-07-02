@@ -8,6 +8,7 @@
 --  Sentinel
 --  Synapse
 
+
 local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = kavoUi.CreateLib("Lollypop Hub V3","DarkTheme")
 
@@ -650,7 +651,7 @@ end)
 GamesSection:NewButton("Adopt Me - Fly Ride Pets", "fly ability for all pets", function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/adoptmegui1'),true))()
 end)
 
-SkriptsSection:NewButton("Prison Life - STEAL TOOLS", "works if player has tools (tools=items)",
+GamesSection:NewButton("Prison Life - STEAL TOOLS", "works if player has tools (tools=items)",
 function()for i,v in pairs (game.Players:GetChildren()) do
 wait()
 for i,b in pairs (v.Backpack:GetChildren()) do
@@ -675,8 +676,12 @@ FeSection:NewButton("FE Fish", "(need hat) Parrot Fishfaxe", function()
 loadstring(game:HttpGet(('https://pastefy.app/yrp6En96/raw'),true))()
 end)
 
-FeSection:NewButton("FE Korblox", "need korblox rekolor for 65 robux", function()
+FeSection:NewButton("FE Korblox", "need korblox rekolor for 65 robux, R15", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/0NzfiZJn"))()
+end)
+
+FeSection:NewButton("FE Vehikle Fly", "flying kar gui", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
 end)
 
 FeSection:NewButton("FE Baxkflip/Frontflip", "baxk and frontflip", function()
