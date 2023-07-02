@@ -48,6 +48,10 @@ SkriptsSection:NewButton("Fly GUI B&W", "modded",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/TeNifRrX"))()
 end)
 
+SkriptsSection:NewButton("Universal Fly GUI", "speed setter",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/YvKv4AuY"))()
+end)
+
 SkriptsSection:NewButton("BETTER Teleport To Player GUI", "V2",
 function()loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
 end)
@@ -85,6 +89,11 @@ end)
 SkriptsSection:NewButton("GodMode", "no death 99% fail only",
 function()-- fe brixk toggle press Z 
 loadstring(game:HttpGet("https://pastebin.com/raw/6g3h9cDB"))()
+end)
+
+SkriptsSection:NewButton("GodMode V2", "no death 99% fail and survive kill brixks",
+function()-- fe brixk toggle 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
 end)
 
 SkriptsSection:NewButton("Better ROBLOX", "red roblox w stat info",
