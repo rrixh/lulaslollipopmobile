@@ -35,6 +35,79 @@ SkriptsSection:NewButton("WALKSPEED GUI", "+ -", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/2gGvc9ya"))()
 end)
 
+SkriptsSection:NewButton("less lag", "FX remover", function()
+local ToDisable = {
+ Textures = true,
+ VisualEffects = true,
+ Parts = true,
+ Particles = true,
+ Sky = true
+}
+
+local ToEnable = {
+ FullBright = false
+}
+
+local Stuff = {}
+
+for _, v in next, game:GetDescendants() do
+ if ToDisable.Parts then
+  if v:IsA("Part") or v:IsA("Union") or v:IsA("BasePart") then
+   v.Material = Enum.Material.SmoothPlastic
+   table.insert(Stuff, 1, v)
+  end
+ end
+ 
+ if ToDisable.Particles then
+  if v:IsA("ParticleEmitter") or v:IsA("Smoke") or v:IsA("Explosion") or v:IsA("Sparkles") or v:IsA("Fire") then
+   v.Enabled = false
+   table.insert(Stuff, 1, v)
+  end
+ end
+ 
+ if ToDisable.VisualEffects then
+  if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("DepthOfFieldEffect") or v:IsA("SunRaysEffect") then
+   v.Enabled = false
+   table.insert(Stuff, 1, v)
+  end
+ end
+ 
+ if ToDisable.Textures then
+  if v:IsA("Decal") or v:IsA("Texture") then
+   v.Texture = ""
+   table.insert(Stuff, 1, v)
+  end
+ end
+ 
+ if ToDisable.Sky then
+  if v:IsA("Sky") then
+   v.Parent = nil
+   table.insert(Stuff, 1, v)
+  end
+ end
+end
+
+game:GetService("TestService"):Message("Effects Disabler Script : Successfully disabled "..#Stuff.." assets / effects. Settings :")
+
+for i, v in next, ToDisable do
+ print(tostring(i)..": "..tostring(v))
+end
+
+if ToEnable.FullBright then
+    local Lighting = game:GetService("Lighting")
+    
+    Lighting.FogColor = Color3.fromRGB(255, 255, 255)
+    Lighting.FogEnd = math.huge
+    Lighting.FogStart = math.huge
+    Lighting.Ambient = Color3.fromRGB(255, 255, 255)
+    Lighting.Brightness = 5
+    Lighting.ColorShift_Bottom = Color3.fromRGB(255, 255, 255)
+    Lighting.ColorShift_Top = Color3.fromRGB(255, 255, 255)
+    Lighting.OutdoorAmbient = Color3.fromRGB(255, 255, 255)
+    Lighting.Outlines = true
+end
+end)
+
 SkriptsSection:NewButton("Mood Switxher", "yellow grey", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/djAd7g2W'))()
 end)
@@ -104,6 +177,11 @@ end)
 SkriptsSection:NewButton("GodMode V2", "no death 99% fail and survive kill brixks",
 function()-- fe brixk toggle 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
+end)
+
+SkriptsSection:NewButton("fast animations", "player animation will be sped up",
+function()-- FAST animations
+loadstring(game:HttpGet("https://scriptblox.com/raw/Fast-Animation-FE_744"))()
 end)
 
 SkriptsSection:NewButton("Better ROBLOX", "red roblox w stat info",
@@ -808,10 +886,6 @@ Home:NewSection("Skripts")
 HomeSection:NewButton("Anti AFK", "disables afk limit", function()
 ---- Roblox Anti Afk Script
 
-HomeSection:NewButton("FraktureSS", "baxkdoor.exe serverside", function()--FRAKTURE SS
-loadstring(game:HttpGet("https://raw.githubusercontent.com/L1ghtingBolt/FraktureSS/master/unobfuscated.lua"))()
-end)
-
 wait(0.5)local ba=Instance.new("ScreenGui")
 local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
 local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
@@ -833,6 +907,10 @@ bb:CaptureController()bb:ClickButton2(Vector2.new())
 ab.Text="Roblox tried to kixk u but i kixked him instead"wait(2)ab.Text="Status : Aktive"end)
 end)
 
+HomeSection:NewButton("FraktureSS", "my baxkdoor.exe serverside", function()--FRAKTURE SS
+loadstring(game:HttpGet("https://raw.githubusercontent.com/L1ghtingBolt/FraktureSS/master/unobfuscated.lua"))()
+end)
+
 local Stats = script.Parent.Stats
 local StatsButton = script.Parent.StatsButton
 
@@ -841,6 +919,6 @@ script.Parent.StatsButton.MouseButton1Down:Connect(function()
 end)
 
 
-Section:NewKeybind("Toggle", "toggle", Enum.KeyCode.F, function()
+HomeSection:NewKeybind("Toggle", "toggle", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
