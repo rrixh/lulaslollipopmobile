@@ -204,6 +204,10 @@ function()-- FAST animations
 loadstring(game:HttpGet("https://scriptblox.com/raw/Fast-Animation-FE_744"))()
 end)
 
+SkriptsSection:NewButton("old animation", "r6 only",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/0ZPiK5ci"))()
+end)
+
 SkriptsSection:NewButton("Better ROBLOX", "red roblox w stat info",
 function()loadstring(game:HttpGet("https://eternityhub.xyz/BetterRoblox/Loader"))()
 end)
@@ -326,6 +330,11 @@ end)
 
 SkriptsSection:NewButton("Purple ESP", "see players highlighted purple",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/7K1Jhmck"))()
+end)
+
+SkriptsSection:NewButton("Leave Game", "leave the game",
+function()-- kixk yourself
+game.Players.LocalPlayer:Kick("🤨u left the game kuz u suxk noob😂")
 end)
 
 
@@ -753,6 +762,10 @@ end)
 GamesSection:NewButton("Adopt Me - Fly Ride Pets", "fly ability for all pets", function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/adoptmegui1'),true))()
 end)
 
+GamesSection:NewButton("Prison Life - Tiger Admin", "admin kommands, kmdlist",
+function()loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/Script'))()
+end)
+
 GamesSection:NewButton("Prison Life - STEAL TOOLS", "works if player has tools (tools=items)",
 function()for i,v in pairs (game.Players:GetChildren()) do
 wait()
@@ -761,6 +774,19 @@ b.Parent = game.Players.LocalPlayer.Backpack
 end
 end
 end)
+
+GamesSection:NewButton("Flee The Faxility", "ftf gui",
+function()loadstring(game:HttpGet("https://raw.githubusercontent.com/LeviTheOtaku/roblox-scripts/main/FTFHAX.lua",true))()
+end)
+
+GamesSection:NewButton("MM2 GUI 2 (New)", "esp,see murderer&more",
+function()loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))();
+end)
+
+GamesSection:NewButton("MM2 - Admin Panel", "esp blah blah more",
+function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
+end)
+
 
 
 
