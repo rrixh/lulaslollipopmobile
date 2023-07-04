@@ -55,6 +55,10 @@ SkriptsSection:NewButton("WALKSPEED GUI", "+ -", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/2gGvc9ya"))()
 end)
 
+SkriptsSection:NewButton("Make ALL players say 🍭🍭🍭🍭🍭", "hahaahhahah XD", function()
+game.Players.LocalPlayer:Kick("Your account has been banned: PERMANENT")
+end)
+
 SkriptsSection:NewButton("less lag", "FX remover", function()
 local ToDisable = {
  Textures = true,
@@ -963,18 +967,10 @@ end)
 
 HomeSection:NewButton("No Lib %FO", "nolib%", function()loadstring(game:HttpGet("https://pastebin.com/raw/2Vxg0a72"))()
 end)
-
---game.Players.getmsg
+--game.Players.LocalPlayer.mesij
 loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD",true))()
 
-local Stats = script.Parent.Stats
-local StatsButton = script.Parent.StatsButton
-
-script.Parent.StatsButton.MouseButton1Down:Connect(function()
-    script.Parent.Stats.Visible = not script.Parent.Stats.Visible
-end)
-
-
-HomeSection:NewKeybind("Toggle", "toggle", Enum.KeyCode.F, function()
-	Library:ToggleUI()
+--PROPERTIES TOGGLE
+Home:NewButton("@", "link", function()
+setclipboard("https://instagram.com/nugit")
 end)
