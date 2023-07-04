@@ -21,7 +21,7 @@ SkriptsSection:NewButton("99% fail impossible obby", "purple = ✅, red = ❌, g
 loadstring(game:HttpGet(('https://pastebin.com/raw/DhLMep63'),true))()
 end)
 
-SkriptsSection:NewButton("Heaven", "anti-lag", function()
+SkriptsSection:NewButton("Heaven Map for 99% fail", "just anti-lag", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/RW7ZT29m"))()
 end)
 
@@ -30,6 +30,26 @@ function()loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101
 end)
 
 local SkriptsSection = Skripts:NewSection("Skripts")
+
+--infjump.Konnekt
+SkriptsSection:NewToggle("Infinite jump", "no jump limit", function(toggled)
+    if toggled then
+        getgenv().InfJump = true
+        spawn(function()
+            while getgenv().InfJump == true do
+                game:GetService("UserInputService").JumpRequest:connect(function()
+                    if getgenv().InfJump == true then
+                        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+                    end
+                end)
+                wait()
+            end
+        end)
+    else
+        getgenv().InfJump = false
+    end
+end)
+--infjump.Diskonnekt
 
 SkriptsSection:NewButton("WALKSPEED GUI", "+ -", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/2gGvc9ya"))()
@@ -112,7 +132,7 @@ SkriptsSection:NewButton("Mood Switxher", "yellow grey", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/djAd7g2W'))()
 end)
 
-SkriptsSection:NewButton("Universal Aimbot", "simple aimbot skript by me", function()
+SkriptsSection:NewButton("Aimbot Nearest Player", "simple aimbot skript by me", function()
 -- AIMBOT by lulaslollipop
 loadstring(game:HttpGet("https://textbin.net/raw/uv6wy7lbdb"))()
 end)
