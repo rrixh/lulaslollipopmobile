@@ -141,10 +141,6 @@ SkriptsSection:NewButton("Make ALL players say 🍭🍭🍭🍭🍭", "hahaahhah
 game.Players.LocalPlayer:Kick("Your account has been banned: PERMANENT")
 end)
 
-SkriptsSection:NewButton("Transform into a Pineapple", "it was ananas fault", function()
-game.Players.LocalPlayer:Kick("You have been banned by ANANAS! you are a noob 🍍")
-end)
-
 SkriptsSection:NewButton("Fly GUI V3", "mobile fly",
 function()-- fly gui v3 
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FLY-GUI-V3-8402"))()
@@ -165,6 +161,14 @@ end)
 
 SkriptsSection:NewButton("BETTER Teleport To Player GUI", "V2",
 function()loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+end)
+
+SkriptsSection:NewButton("Lag Switxh V2", "might inkrease FX too",
+function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Protected - 2023-05-28T225112.055.lua.txt'),true))()
+end)
+
+SkriptsSection:NewButton("Transform into a Pineapple 🍍", "it was ananas fault", function()
+game.Players.LocalPlayer:Kick("You have been banned by ANANAS! you are a noob 🍍")
 end)
 
 SkriptsSection:NewButton("Translate Messages", "type >(language)",
@@ -338,11 +342,6 @@ end)
 
 SkriptsSection:NewButton("Purple ESP", "see players highlighted purple",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/7K1Jhmck"))()
-end)
-
-SkriptsSection:NewButton("Leave Game", "leave the game",
-function()-- kixk yourself
-game.Players.LocalPlayer:Kick("🤨u left the game kuz u suxk noob😂")
 end)
 
 
@@ -931,7 +930,6 @@ end)
 
 
 
-
 -- Home.TabMy.Skrpts
 local Home = Window:NewTab("Home")
 local HomeSection = Home:NewSection("Note: more skripts will be added soon")
@@ -976,10 +974,17 @@ end)
 
 HomeSection:NewButton("No Lib %FO", "nolib%", function()loadstring(game:HttpGet("https://pastebin.com/raw/2Vxg0a72"))()
 end)
+
+HomeSection:NewButton("Exit Game", "leave the game",
+function()-- kixk yourself
+game.Players.LocalPlayer:Kick("get out")
+end)
 --game.Players.LocalPlayer.mesij
 loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD",true))()
 
---PROPERTIES TOGGLE
-Home:NewButton("@", "link", function()
-setclipboard("https://instagram.com/nugit")
-end)
+
+
+
+-- More.TabMy.Skrpts
+local More = Window:NewTab("More")
+local MoreSection = More:NewSection("more skripts soon...🍭😋")
