@@ -1,3 +1,47 @@
+-- Gui to Lua LOLLYPOPHUB V3.1 UPDATED
+-- Version: 3.1
+-- toggle button added
+-- Instanxes:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Frame.BackgroundTransparency = 0.500
+Frame.Position = UDim2.new(0.868712733, 0, 0.1237762257, 0)
+Frame.Size = UDim2.new(0.109512111, 0, 0.187972031, 0)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "klose🍭open"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 30.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	game:GetService("VirtualInputManager"):SendKeyEvent(true, "F6" , false , game)
+end)
+
+UITextSizeConstraint.Parent = TextButton
+UITextSizeConstraint.MaxTextSize = 35
+
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Lollypop Hub🍭 | V3.1","BloodTheme")
+
 --- yum lollypop hub V3
 -- LightTheme
 --  DarkTheme
@@ -7,10 +51,6 @@
 --   Midnight
 --  Sentinel
 --  Synapse
-
-
-local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = kavoUi.CreateLib("Lollypop Hub V3","DarkTheme")
 
 --skripts tab
 local Skripts = Window:NewTab("Skripts")
@@ -598,6 +638,12 @@ FunSection:NewButton("Destroy Body", "yea", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/naRUdxrc", true))()
 end)
 
+local FunSection = Fun:NewSection("More fun")
+
+FunSection:NewButton("fake lag", "lag for fun",
+function()loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Fe%20Fake%20Lag%20Obfuscator'))()
+end)
+
 -- tools 
 local Tools = Window:NewTab("Tools")
 local ToolsSection = Tools:NewSection("Tools")
@@ -1010,6 +1056,9 @@ function()shared.CustomCorrections = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/eosuwu/boblox/main/autogremer.lua"))()
 end)
 
-MoreSection:NewButton("fake lag", "lag for fun",
-function()loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Fe%20Fake%20Lag%20Obfuscator'))()
+--toggle the ui yes
+local MoreSection = More:NewSection("no")
+
+MoreSection:NewKeybind("Toggle ui", "toggle the ui yes", Enum.KeyCode.F6, function()
+    Library:ToggleUI()
 end)
