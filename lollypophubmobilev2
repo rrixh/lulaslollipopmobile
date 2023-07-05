@@ -163,7 +163,7 @@ SkriptsSection:NewButton("BETTER Teleport To Player GUI", "V2",
 function()loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
 end)
 
-SkriptsSection:NewButton("Lag Switxh V2", "might inkrease FX too",
+SkriptsSection:NewButton("Lag Switxh V2", "might inkrease FX too,🛜",
 function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Protected - 2023-05-28T225112.055.lua.txt'),true))()
 end)
 
@@ -367,6 +367,15 @@ local AdminSection = Admin:NewSection("Bonus😁")
 
 AdminSection:NewButton("Nameless Admin", "type ;cmds", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+end)
+
+local AdminSection = Admin:NewSection("MORE")
+
+AdminSection:NewButton("Annoying Admin", "type .cmds and then /console to see kmd list", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMightySource/FE-Annoying-Admin/main/Main.lua'),true))()
+end)
+
+AdminSection:NewButton("Simple Admin", "type .cmds, say (.set prefix ;) to set ; instead of .", function()loadstring(game:HttpGet('https://pastebin.com/raw/3hDQcTaD'))()
 end)
 
 
@@ -726,6 +735,10 @@ HubSection:NewButton("RTX GUI 2", "map kolor/theme editor", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/enhancer.txt"))()
 end)
 
+HubSection:NewButton("FE RemX OP trolling gui", "trolling gui", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/6TGpAUjr"))()
+end)
+
 
 
 
@@ -987,4 +1000,16 @@ loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD",true))()
 
 -- More.TabMy.Skrpts
 local More = Window:NewTab("More")
-local MoreSection = More:NewSection("more skripts soon...🍭😋")
+local MoreSection = More:NewSection("more skripts koming soon...🍭")
+
+--buttons.MoreSektion
+MoreSection:NewButton("Auto Grammar V2", "type with good punkuation",
+function()shared.CustomCorrections = {
+    ["examplething12"] = "hello" -- if you say "examplething12" it will become hello
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/eosuwu/boblox/main/autogremer.lua"))()
+end)
+
+MoreSection:NewButton("fake lag", "lag for fun",
+function()loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Fe%20Fake%20Lag%20Obfuscator'))()
+end)
