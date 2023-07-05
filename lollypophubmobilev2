@@ -760,6 +760,11 @@ GamesSection:NewButton("Pankake Empire Tower", "yum🥞🥞🥞", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0pancake", true))()
 end)
 
+GamesSection:NewButton("Pet Empire Tykoon", "🐶🐱🐕🐰🐈🐹🐇", function()
+-- petempire tora
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0pettycoon", true))()
+end)
+
 GamesSection:NewButton("Rainbow Friends 2", "best rainbow friends skript", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0rainbow'))()
 end)
 
