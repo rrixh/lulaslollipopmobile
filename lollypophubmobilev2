@@ -141,6 +141,10 @@ SkriptsSection:NewButton("Make ALL players say 🍭🍭🍭🍭🍭", "hahaahhah
 game.Players.LocalPlayer:Kick("Your account has been banned: PERMANENT")
 end)
 
+SkriptsSection:NewButton("Transform into a Pineapple", "it was ananas fault", function()
+game.Players.LocalPlayer:Kick("You have been banned by ANANAS! you are a noob 🍍")
+end)
+
 SkriptsSection:NewButton("Fly GUI V3", "mobile fly",
 function()-- fly gui v3 
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FLY-GUI-V3-8402"))()
