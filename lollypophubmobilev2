@@ -55,10 +55,6 @@ SkriptsSection:NewButton("WALKSPEED GUI", "+ -", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/2gGvc9ya"))()
 end)
 
-SkriptsSection:NewButton("Make ALL players say 🍭🍭🍭🍭🍭", "hahaahhahah XD", function()
-game.Players.LocalPlayer:Kick("Your account has been banned: PERMANENT")
-end)
-
 SkriptsSection:NewButton("less lag", "FX remover", function()
 local ToDisable = {
  Textures = true,
