@@ -16,7 +16,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Frame.BackgroundTransparency = 0.500
-Frame.Position = UDim2.new(0, 0, 0.40, 0)
+Frame.Position = UDim2.new(0.858712733, 0, 0.1537762257, 0)
 Frame.Size = UDim2.new(0, 90, 0, 30)
 
 TextButton.Parent = Frame
@@ -1040,7 +1040,6 @@ game.Players.LocalPlayer:Kick("get out")
 end)
 --game.Players.LocalPlayer.mesij
 loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD",true))()
-
 
 
 
