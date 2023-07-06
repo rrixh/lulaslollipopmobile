@@ -14,17 +14,17 @@ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Frame.BackgroundColor3 = Color3.fromRGB(128,0,32)
 Frame.BackgroundTransparency = 0.500
-Frame.Position = UDim2.new(0.858712733, 0, 0.1537762257, 0)
+Frame.Position = UDim2.new(0, 0, 0.40, 0)
 Frame.Size = UDim2.new(0, 90, 0, 30)
 
 TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 TextButton.BackgroundTransparency = 1.000
 TextButton.Size = UDim2.new(1, 0, 1, 0)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "klose🍭open"
+TextButton.Font = Enum.Font.GothamBold
+TextButton.Text = "toggle"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 30.000
@@ -1038,8 +1038,8 @@ HomeSection:NewButton("Exit Game", "leave the game",
 function()-- kixk yourself
 game.Players.LocalPlayer:Kick("get out")
 end)
---game.Players.LocalPlayer.mesij
-loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD",true))()
+--game.Players.LokalPlayer.mesij
+loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
 
 
 
