@@ -845,6 +845,9 @@ FeSection:NewButton("FE Fish", "(need hat) Parrot Fishfaxe", function()
 loadstring(game:HttpGet(('https://pastefy.app/yrp6En96/raw'),true))()
 end)
 
+FeSection:NewButton("FE Ragdoll Yourself", "reset or die to disable", function()loadstring(game:HttpGet("https://pastebin.com/raw/VY5d58xz"))()
+end)
+
 FeSection:NewButton("FE Korblox", "need korblox rekolor for 65 robux, R15", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/0NzfiZJn"))()
 end)
@@ -1008,6 +1011,9 @@ end)
 HomeSection:NewButton("No Lib %FO", "nolib%", function()loadstring(game:HttpGet("https://pastebin.com/raw/2Vxg0a72"))()
 end)
 
+HomeSection:NewButton("Filtering Enabled", "fe xhexker", function()print(workspace.FilteringEnabled)
+end)
+
 HomeSection:NewButton("Exit Game", "leave the game",
 function()-- kixk yourself
 game.Players.LocalPlayer:Kick("get out")
@@ -1033,6 +1039,64 @@ MoreSection:NewButton("Auto Klixker", "mighty klixker",
 function()-- mighty klixker
 getgenv().key = "Hostile"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/The-telligence/main/MC%20KSystem%202"))()
+end)
+
+MoreSection:NewButton("Faster Run", "run faster",
+function()shared["本地播放器"] = game:FindService'Players'['LocalPlayer'] 
+shared["数学"] = math
+shared["开方"] = shared["数学"]['sqrt']
+shared["本地播放器"]['Character']:FindFirstChildOfClass'Humanoid'.WalkSpeed = shared["开方"](1000) -- Speed exploit
+end)
+
+MoreSection:NewButton("Kneel", "kneel and walk",
+function()--Crouch Animation ID: 287325678
+
+local Crouch = Instance.new("Animation")
+Crouch.AnimationId = "rbxassetid://287325678"
+local DoIt = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Crouch)
+DoIt:Play()
+end)
+
+MoreSection:NewButton("Kneel V2", "C to toggle USE GENERATE ANY KEYBIND skript",
+function()KEY = "C" -- Key to crouch
+CROUCHWALKSPEED = 12 -- Walkspeed when you are crouching
+
+local Player = game:GetService("Players").LocalPlayer;
+local UserInputService = game:GetService("UserInputService");
+
+local Character = Player.Character;
+local Humanoid = Character:FindFirstChildOfClass("Humanoid");
+local oldWS = Humanoid.WalkSpeed
+
+local CrouchAnimation = Instance.new("Animation");
+CrouchAnimation.AnimationId = "rbxassetid://287325678";
+local Crouch = Humanoid:LoadAnimation(CrouchAnimation);
+Crouch.Priority = Enum.AnimationPriority.Action
+
+local Crouching = false
+UserInputService.InputBegan:Connect(function(input,gameprocessed)
+   if gameprocessed then return end
+   if input.KeyCode == Enum.KeyCode[KEY] then
+       Crouching = true
+       Crouch:Play(.1)
+       Humanoid.WalkSpeed = CROUCHWALKSPEED
+   end
+end)
+
+UserInputService.InputEnded:Connect(function(input,gameprocessed)
+   if gameprocessed then return end
+   if input.KeyCode == Enum.KeyCode[KEY] then
+       Crouching = false
+       Crouch:Stop(.1)
+       Humanoid.WalkSpeed = oldWS
+   end
+end)
+
+Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+   if Crouching then
+       Humanoid.WalkSpeed = CROUCHWALKSPEED
+   end
+end)
 end)
 
 --toggle the ui yes
