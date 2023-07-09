@@ -5,9 +5,9 @@
 
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V3.2","BloodTheme")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V3.1","BloodTheme")
 
---- yum lollypop hub V3.2
+--- yum lollypop hub V3
 -- LightTheme
 --  DarkTheme
 --   GrapeTheme
@@ -32,6 +32,12 @@ end)
 
 SkriptsSection:NewButton("EXEKUTE SKRIPT FROM XHAT", "exekute a skript frm xhat box",
 function()loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/chat-executor/main/chat-executor",true))()
+end)
+
+SkriptsSection:NewButton("Lonely Ragdoll", "for 99% fail impossible obby",
+function()local ohInstance1 = game.Players.LocalPlayer.Character.Humanoid
+
+game:GetService("ReplicatedStorage").OnRagdoll:FireServer(ohInstance1)
 end)
 
 local SkriptsSection = Skripts:NewSection("Skripts")
