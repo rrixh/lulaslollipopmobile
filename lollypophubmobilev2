@@ -823,6 +823,11 @@ GamesSection:NewButton("MM2 - Admin Panel", "esp blah blah more",
 function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
 end)
 
+GamesSection:NewButton("[FREE ADMIN] Fedatorum Admin Abuser", "only works in freeadmin games",
+function()-- fedatorum admin abuser
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/showcases/main/fedoratumadmin",true))()
+end)
+
 
 
 
@@ -880,7 +885,11 @@ loadstring(game:HttpGet("https://pastebin.com/raw/H9B4aGij"))()
 end)
 
 FeSection:NewButton("FE fly any hat like a dragon", "use keybind stroke to move", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BidoSkinsYT/BidoSkinsYT/main/Fe%20hat%20Dragon"))
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BidoSkinsYT/BidoSkinsYT/main/Fe%20hat%20Dragon"))()
+end)
+
+FeSection:NewButton("FE WAR ENDER", "warendergod", function()
+loadstring(game:HttpGet("https://textbin.net/raw/nos6oilby7"))()
 end)
 
 FeSection:NewButton("FE Krazy", "by dark", function()
@@ -1018,6 +1027,12 @@ function()shared.CustomCorrections = {
     ["examplething12"] = "hello" -- if you say "examplething12" it will become hello
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/eosuwu/boblox/main/autogremer.lua"))()
+end)
+
+MoreSection:NewButton("Auto Klixker", "mighty klixker",
+function()-- mighty klixker
+getgenv().key = "Hostile"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/The-telligence/main/MC%20KSystem%202"))()
 end)
 
 --toggle the ui yes
