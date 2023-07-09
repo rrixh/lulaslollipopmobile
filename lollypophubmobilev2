@@ -5,9 +5,9 @@
 
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V3.1","BloodTheme")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V3.2","BloodTheme")
 
---- yum lollypop hub V3
+--- yum lollypop hub V3.2
 -- LightTheme
 --  DarkTheme
 --   GrapeTheme
@@ -1011,9 +1011,6 @@ end)
 HomeSection:NewButton("No Lib %FO", "nolib%", function()loadstring(game:HttpGet("https://pastebin.com/raw/2Vxg0a72"))()
 end)
 
-HomeSection:NewButton("Filtering Enabled", "fe xhexker", function()print(workspace.FilteringEnabled)
-end)
-
 HomeSection:NewButton("Rejoin", "rejoins the same lobby",
 function()--rejoin lobby
 local ts = game:GetService("TeleportService")
@@ -1109,6 +1106,8 @@ end)
 end)
 --game.Players.LokalPlayer.mesij
 loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
+
+
 
 --toggle the ui yes
 local MoreSection = More:NewSection("no")
