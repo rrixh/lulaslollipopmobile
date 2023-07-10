@@ -1,4 +1,4 @@
--- Gui to Lua LOLLYPOPHUB V3.1 UPDATED
+-- Gui to Lua LOLLYPOPHUB V3.2 UPDATED
 -- Version: 3.2
 -- toggle button added
 -- Instanxes:
@@ -793,9 +793,11 @@ GamesSection:NewButton("Pankake Empire Tower", "yum🥞🥞🥞", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0pancake", true))()
 end)
 
-GamesSection:NewButton("Pet Empire Tykoon", "🐶🐱🐕🐰🐈🐹🐇", function()
--- petempire tora
+GamesSection:NewButton("Pet Empire Tykoon", "🐶🐱🐕🐰🐈🐹🐇", function()-- petempire tora
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0pettycoon", true))()
+end)
+
+GamesSection:NewButton("Survive & Kill the Killers in AREA 51", "(OP) get raygun and 99999 ammo", function()loadstring(game:HttpGet("https://pastebin.com/raw/tCxvzGXi"))()
 end)
 
 GamesSection:NewButton("Rainbow Friends 2", "best rainbow friends skript", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0rainbow'))()
