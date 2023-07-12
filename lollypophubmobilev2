@@ -1,11 +1,11 @@
--- Gui to Lua LOLLYPOPHUB V3.4 UPDATED
--- Version: 3.4
+-- Gui to Lua LOLLYPOPHUB V3.6 UPDATED
+-- Version: 3.6
 -- toggle button added
 -- Instanxes:
 
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V3.4","Midnight")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V3.6","Serpent")
 
 --- yum lollypop hub V3.4
 -- LightTheme
@@ -402,6 +402,12 @@ end)
 
 FunSection:NewButton("Energyze Animations", "work r15 and r6", function()loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))()
 end)
+
+FunSection:NewButton("Be A Helikopter", "human xhoppa", function()-- laydown spin/helikopter
+loadstring(game:HttpGet("https://pastebin.com/raw/XP8yfVbk"))()
+end)
+
+
 
 local FunSection = Fun:NewSection("Message Fun")
 
@@ -803,6 +809,12 @@ GamesSection:NewButton("Pankake Empire Tower", "yum🥞🥞🥞", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0pancake", true))()
 end)
 
+GamesSection:NewButton("T-TITANS BATTEGROUNDS", "no kooldown blah blah", function()pcall(function()
+
+  loadstring(game:HttpGet("https://roflux.net/scripts/games/" .. tostring(game.PlaceId) .. ".lua"))()
+end)
+end)
+
 GamesSection:NewButton("Pet Empire Tykoon", "🐶🐱🐕🐰🐈🐹🐇", function()-- petempire tora
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0pettycoon", true))()
 end)
@@ -1138,8 +1150,40 @@ Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
    end
 end)
 end)
+
+local MoreSection = More:NewSection("99% fail impossible obby lokations")
+
+MoreSection:NewButton("chest", "teleport to the xhest",
+function()-- teleport to xhest
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-911.98291015625, 2005.8095703125, -149.64857482910156)
+end)
+
+MoreSection:NewButton("behind the chest", "teleport to the xhest",
+function()-- teleport behind xhest
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-921.2446899414062, 1995.87255859375, -150.1106719970703)
+end)
+
+MoreSection:NewButton("winners room", "teleport to the xhest",
+function()-- teleport to winning room
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(314.3387451171875, 17002.197265625, 202.53802490234375)
+end)
+
+MoreSection:NewButton("offixe", "sits u in the offixe seat",
+function()-- sit in the offixe
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(259.6474304199219, 17004.259765625,
+162.38287353515625)
+    -- sit while tp
+game.Players.LocalPlayer.Character.Humanoid.Sit = true
+end)
+
+MoreSection:NewButton("unknown area", "teleport to hidden area",
+function()-- teleport to hidden 99
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(269.36907958984375, 17024.74609375,
+139.19142150878906)
+end)
 --game.Players.LokalPlayer.mesij
 loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
+
 
 
 
