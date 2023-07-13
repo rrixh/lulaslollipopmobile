@@ -7,7 +7,7 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = Library.CreateLib("Lollypop Hub🍭 | V3.6","Serpent")
 
---- yum lollypop hub V3.4
+--- yum lollypop hub V3.6
 -- LightTheme
 --  DarkTheme
 --   GrapeTheme
@@ -146,6 +146,11 @@ end)
 SkriptsSection:NewButton("Aimbot", "simple aimbot skript by me", function()
 -- AIMBOT by lulaslollipop
 loadstring(game:HttpGet("https://textbin.net/raw/uv6wy7lbdb"))()
+end)
+
+SkriptsSection:NewButton("Drag & Resize chat", "lets u kontrol the xhat size and drag it", function()
+-- drag &resize xhat
+loadstring(game:HttpGet("https://pastebin.com/raw/e3KhdyYS"))()
 end)
 
 SkriptsSection:NewButton("Make ALL players say 🍭🍭🍭🍭🍭", "hahaahhahah XD", function()
