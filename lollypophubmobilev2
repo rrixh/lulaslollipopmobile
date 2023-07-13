@@ -827,6 +827,9 @@ end)
 GamesSection:NewButton("Survive & Kill the Killers in AREA 51", "(OP) get raygun and 99999 ammo", function()loadstring(game:HttpGet("https://pastebin.com/raw/tCxvzGXi"))()
 end)
 
+GamesSection:NewButton("Zombie Attaxk", "my zombie atk gui", function()loadstring(game:HttpGet("https://pastebin.com/raw/fzxqESwF"))()
+end)
+
 GamesSection:NewButton("Rainbow Friends 2", "best rainbow friends skript", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0rainbow'))()
 end)
 
