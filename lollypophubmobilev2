@@ -1,19 +1,18 @@
--- Gui to Lua LOLLYPOPHUB V3.6 UPDATED
--- Version: 3.6
+-- Gui to Lua LOLLYPOPHUB V3.8 UPDATED
+-- Version: 3.8
 -- toggle button added
 -- Instanxes:
 
-
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V3.6","Serpent")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V3.8","Serpent")
 
---- yum lollypop hub V3.6
--- LightTheme
+--- yum lollypop hub V3.8
+--  LightTheme
 --  DarkTheme
---   GrapeTheme
+--  GrapeTheme
 --  BloodTheme
 --  Ocean
---   Midnight
+--  Midnight
 --  Sentinel
 --  Synapse
 
@@ -66,77 +65,30 @@ SkriptsSection:NewButton("WALKSPEED GUI", "+ -", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/2gGvc9ya"))()
 end)
 
+SkriptsSection:NewButton("Kredit", "ty to me😍🍭", function()
+-- F9/ Generated konsole
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LULASLOLLIPOP THE BEST🍭💓🍭💓","All")
+end)
+
 SkriptsSection:NewButton("less lag", "FX remover", function()
-local ToDisable = {
- Textures = true,
- VisualEffects = true,
- Parts = true,
- Particles = true,
- Sky = true
-}
+for _, v in pairs(game:GetService("Workspace"):GetDescendants()) do
+    if v:IsA("BasePart") and not v.Parent:FindFirstChild("Humanoid") then
+        v.Material = Enum.Material.SmoothPlastic
+        if v:IsA("Texture") then
+            v:Destroy()
+        end
+    end
+end	
+end)
 
-local ToEnable = {
- FullBright = false
-}
-
-local Stuff = {}
-
-for _, v in next, game:GetDescendants() do
- if ToDisable.Parts then
-  if v:IsA("Part") or v:IsA("Union") or v:IsA("BasePart") then
-   v.Material = Enum.Material.SmoothPlastic
-   table.insert(Stuff, 1, v)
-  end
- end
- 
- if ToDisable.Particles then
-  if v:IsA("ParticleEmitter") or v:IsA("Smoke") or v:IsA("Explosion") or v:IsA("Sparkles") or v:IsA("Fire") then
-   v.Enabled = false
-   table.insert(Stuff, 1, v)
-  end
- end
- 
- if ToDisable.VisualEffects then
-  if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("DepthOfFieldEffect") or v:IsA("SunRaysEffect") then
-   v.Enabled = false
-   table.insert(Stuff, 1, v)
-  end
- end
- 
- if ToDisable.Textures then
-  if v:IsA("Decal") or v:IsA("Texture") then
-   v.Texture = ""
-   table.insert(Stuff, 1, v)
-  end
- end
- 
- if ToDisable.Sky then
-  if v:IsA("Sky") then
-   v.Parent = nil
-   table.insert(Stuff, 1, v)
-  end
- end
-end
-
-game:GetService("TestService"):Message("Effects Disabler Script : Successfully disabled "..#Stuff.." assets / effects. Settings :")
-
-for i, v in next, ToDisable do
- print(tostring(i)..": "..tostring(v))
-end
-
-if ToEnable.FullBright then
-    local Lighting = game:GetService("Lighting")
-    
-    Lighting.FogColor = Color3.fromRGB(255, 255, 255)
-    Lighting.FogEnd = math.huge
-    Lighting.FogStart = math.huge
-    Lighting.Ambient = Color3.fromRGB(255, 255, 255)
-    Lighting.Brightness = 5
-    Lighting.ColorShift_Bottom = Color3.fromRGB(255, 255, 255)
-    Lighting.ColorShift_Top = Color3.fromRGB(255, 255, 255)
-    Lighting.OutdoorAmbient = Color3.fromRGB(255, 255, 255)
-    Lighting.Outlines = true
-end
+SkriptsSection:NewButton("anti-afk", "afk limit bypass", function()
+-- anti afk
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
 end)
 
 SkriptsSection:NewButton("Mood Switxher", "yellow grey", function()
@@ -687,6 +639,10 @@ end)
 local Hub = Window:NewTab("Hubs & GUIs")
 local HubSection = Hub:NewSection("everything u need😋🍭")
 
+HubSection:NewButton("99% fail impossible obby teleport gui", "small tp gui by me", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/HQY7LiGn"))()
+end)
+
 HubSection:NewButton("ASTRAL HUB V3", "a hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/AstralHub/main/Main.lua", true))()
 end)
@@ -1006,10 +962,16 @@ end)
 
 -- Home.TabMy.Skrpts
 local Home = Window:NewTab("Home")
-local HomeSection = Home:NewSection("Note: more skripts will be added soon")
+local HomeSection = Home:NewSection("Note: added walkspeed and jumppower setter🍭")
 
 HomeSection:NewButton("🔎 Skript", "look up any skript", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/ScriptSearcher"))()
+end)
+
+HomeSection:NewTextBox("Walkspeed","xhanges the walkspeed", function(e)game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=e 
+end)
+
+HomeSection:NewTextBox("Jump Power","xhanges the jumppower (might not work idk y)", function(e)game.Players.LocalPlayer.Character.Humanoid.JumpHeight=e 
 end)
 
 HomeSection:NewButton("Ping Kounter", "see ping", function()
@@ -1159,7 +1121,7 @@ Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
 end)
 end)
 
-local MoreSection = More:NewSection("99% fail impossible obby lokations")
+local MoreSection = More:NewSection("99% fail impossible obby lokations (extras)")
 
 MoreSection:NewButton("chest", "teleport to the xhest",
 function()-- teleport to xhest
