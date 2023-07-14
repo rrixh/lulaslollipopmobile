@@ -674,7 +674,7 @@ HubSection:NewButton("99% fail impossible obby teleport gui", "small tp gui by m
 loadstring(game:HttpGet("https://pastebin.com/raw/HQY7LiGn"))()
 end)
 
-HubSection:NewButton("Keubind letter tools GUI", "simple keybind gui", function()
+HubSection:NewButton("Keybind letter tools GUI", "simple keybind gui", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/1xrhfTD5"))()
 end)
 
