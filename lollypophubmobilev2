@@ -3,6 +3,20 @@
 -- toggle button added
 -- Instanxes:
 
+local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
+CoreGui:SetCore("SendNotification", {
+    Title = "LOLLYPOPHUB V3.8",
+    Text = "almost every skript in this joint",
+    Duration = 8, 
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+Title = "made by:",  	
+Text = "lulaslollipop🍭",
+	Icon = "rbxthumb://type=Asset&id=11425468695=150&h=150",
+	Duration = 5
+})
+
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = Library.CreateLib("Lollypop Hub🍭 | V3.8","Serpent")
 
@@ -388,7 +402,7 @@ end)
 
 FunSection:NewButton("Auto Exkuse", "auto msg wen u die", function()
 getgenv().dmsgs = {
-  deathmessages = {"i was lagging", "that wasnt fair", "bruh thats kap", "i wasnt paying attention", "i was doing something", "my mom kalled me", "that wasnt fair", "wow bro"}
+  deathmessages = {"i was lagging", "that wasnt fair", "bruh", "dude", "i was doing something", "whyyyyy", "that wasnt fair", "wow bro"}
 }
 --[[
 Auto-Exkuse
@@ -634,6 +648,23 @@ ToolsSection:NewButton("Disabled Tools", "key:AdminTools", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/0BsHnxbk'))()
 end)
 
+-- KEybind tools
+ToolsSection:NewButton("Q Tool", "give u Q key from 💻 as a tool",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/5ZgW4X4q"))()
+end)
+
+ToolsSection:NewButton("Z Tool", "give u Z key from 💻 as a tool",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/HVTtz0JU"))()
+end)
+
+ToolsSection:NewButton("X Tool", "give u X key from 💻 as a tool",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/VkFTvruh"))()
+end)
+
+ToolsSection:NewButton("C Tool", "give u C Key from 💻 as a tool",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/wgxcSj5N"))()
+end)
+
 
 -- hubs and gui
 local Hub = Window:NewTab("Hubs & GUIs")
@@ -641,6 +672,10 @@ local HubSection = Hub:NewSection("everything u need😋🍭")
 
 HubSection:NewButton("99% fail impossible obby teleport gui", "small tp gui by me", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/HQY7LiGn"))()
+end)
+
+HubSection:NewButton("Keubind letter tools GUI", "simple keybind gui", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1xrhfTD5"))()
 end)
 
 HubSection:NewButton("ASTRAL HUB V3", "a hub", function()
