@@ -1,11 +1,11 @@
--- Gui to Lua LOLLYPOPHUB V3.8 UPDATED
--- Version: 3.8
+-- Gui to Lua LOLLYPOPHUB V4 UPDATED
+-- Version: 4
 -- toggle button added
 -- Instanxes:
 
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
-    Title = "LOLLYPOPHUB V3.8",
+    Title = "LOLLYPOPHUB V4🍭😋🍭😋",
     Text = "almost every skript in this joint",
     Duration = 8, 
 })
@@ -18,7 +18,7 @@ Text = "lulaslollipop🍭",
 })
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V3.8","Serpent")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V4","Serpent")
 
 --- yum lollypop hub V3.8
 --  LightTheme
@@ -39,11 +39,16 @@ SkriptsSection:NewButton("99% fail impossible obby", "purple = ✅, red = ❌, g
 loadstring(game:HttpGet(('https://pastebin.com/raw/DhLMep63'),true))()
 end)
 
-SkriptsSection:NewButton("Heaven Map for 99% fail", "just anti-lag", function()
+SkriptsSection:NewButton("Heaven Map (99% fail)", "just anti-lag", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/RW7ZT29m"))()
 end)
 
-SkriptsSection:NewButton("EXEKUTE SKRIPT FROM XHAT", "exekute a skript frm xhat box",
+SkriptsSection:NewButton("Vietnam has joined notifier📢 (New)", "will send u a notif if viet joins", function()
+-- be notified wen viet joins
+loadstring(game:HttpGet("https://pastebin.com/raw/C96cg2xG"))()
+end)
+
+SkriptsSection:NewButton("EXEKUTE A SKRIPT FROM XHAT", "exekute a skript frm msg box",
 function()loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/chat-executor/main/chat-executor",true))()
 end)
 
@@ -674,7 +679,7 @@ HubSection:NewButton("99% fail impossible obby teleport gui", "small tp gui by m
 loadstring(game:HttpGet("https://pastebin.com/raw/HQY7LiGn"))()
 end)
 
-HubSection:NewButton("Keybind letter tools GUI", "simple keybind gui", function()
+HubSection:NewButton("Keubind letter tools GUI", "simple keybind gui", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/1xrhfTD5"))()
 end)
 
@@ -1076,8 +1081,25 @@ end)
 local More = Window:NewTab("More")
 local MoreSection = More:NewSection("more skripts koming soon...🍭")
 
+MoreSection:NewButton("Player Notifier", "will notify if a player leaves/joined",
+function()-- player joined/left lobby
+loadstring(game:HttpGet("https://pastebin.com/raw/c5JacC0M"))()
+    -- notifikation joiend/left
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Player Notifier✅On";
+    Text = "u will be notified wen players leave/join";
+ 
+})
+end)
+
+MoreSection:NewButton("Kopy Avatars (IY)", "use infinite yield 'copyid (playername)'",
+function()-- kopy avatar skript loadstring
+loadstring(game:HttpGet("https://pastebin.com/raw/9Tmvpzn4"))()
+end)
+
+
 --buttons.MoreSektion
-MoreSection:NewButton("Auto Grammar V2", "type with good punkuation",
+MoreSection:NewButton("Auto Grammar V2", "type with good punkuation(not that good so what)",
 function()shared.CustomCorrections = {
     ["examplething12"] = "hello" -- if you say "examplething12" it will become hello
 }
@@ -1188,6 +1210,8 @@ Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFram
 end)
 --game.Players.LokalPlayer.mesij
 loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
+-- Kontrolled.P
+loadstring(game:HttpGet("https://pastebin.com/raw/REdW8kfE"))()
 
 
 
