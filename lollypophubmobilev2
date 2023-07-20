@@ -608,17 +608,27 @@ FunSection:NewButton("fake lag", "lag for fun",
 function()loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Fe%20Fake%20Lag%20Obfuscator'))()
 end)
 
--- tools 
+-- tools tab
 local Tools = Window:NewTab("Tools")
 local ToolsSection = Tools:NewSection("Tools")
 
 ToolsSection:NewButton("BTools", "building tools", function()
-a = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
-a.BinType = 2
+b = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+b.BinType = 4 --del
+c = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+c.BinType = 3 --kopy
+end)--kopy&del
+ToolsSection:NewButton("Delete", "the Delete building tool", function()
+b = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+b.BinType = 4 
+end)--end.deletetool
+ToolsSection:NewButton("Kopy", "the Kopy building tool", function()
 b = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
 b.BinType = 3
-c = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
-c.BinType = 4
+end)--end.kopytool
+--end btools.Tools tab
+ToolsSection:NewButton("Free Gear Tools 🧨", "💣⚙️👊🏽⛓️fun", function()
+loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()
 end)
 
 ToolsSection:NewButton("Teleknesis", "works in games like brookhaven,dahood etx.", function()
@@ -682,9 +692,6 @@ end)
 ToolsSection:NewButton("{LeftKontrol} Tool", "gives u the left ktrl button frm 💻 as a tool",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/NdEpUa4k"))()
 end)
-
-
-
 
 
 
@@ -755,6 +762,18 @@ end)
 HubSection:NewButton("SPIDERMAN ABILITY GUI", "klimb walls (C to toggle)", function()
 --SPIDER MAN GUI
 loadstring(game:HttpGet(('https://pastebin.com/raw/2X0hKUgq'),true))()
+end)
+
+HubSection:NewButton("Universal Spy GUI", "player list gui", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy gui.lua"))()
+end)
+
+HubSection:NewButton("Fling GUI", "fling a player by walking into them", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+end)
+
+HubSection:NewButton("Fling - press a player", "fling a player by pressing them", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
 end)
 
 HubSection:NewButton("Ohio Hub", "small hub", function()
@@ -982,49 +1001,119 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./dbb6ce6f6ce
 end)
 
 
+-- weapons.forFun tab
+local w = Window:NewTab("Weapons/Banishers")
+local wSection = w:NewSection("fun things")
 
-
--- ovas tabs
-local Ovas = Window:NewTab("Others")
-local OvasSection = Ovas:NewSection("Others")
-
-OvasSection:NewButton("Universal Spy GUI", "player list gui", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy gui.lua"))()
+wSection:NewButton("Non-FE Skripthub (old)", "some dont work", function()-- NONFE HUB
+loadstring(game:HttpGet("https://pastebin.com/raw/mjPzCChH"))()
 end)
 
-OvasSection:NewButton("Walkfling gui", "fling a player by walking into them", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+wSection:NewButton("Klumsy Gunner", "kool", function()-- klumsy gunner
+loadstring(game:HttpGet("https://pastebin.com/raw/VdfTg8Rm"))()
 end)
 
-OvasSection:NewButton("Press a player  fling", "fling a player by pressing them", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
+wSection:NewButton("Army Gunner", "🪖", function()-- army gunner
+loadstring(game:HttpGet("https://pastebin.com/raw/6yf2cDfG"))()
 end)
 
-OvasSection:NewButton("😈", "😈😈😈😈😈", function()
--- FE LAG CRASH SERVER | Makes the game lag for every player eventually making them crash or leave.
--- (Should work on any game with default roblox chat)
--- yeah
-
- while wait() do
-local Message = "😈"
-local Unicode = " "
-Message = Message .. Unicode:rep(200 - #Message)
-
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
-
-if SayMessageRequest then
-    for i = 1, 7 do
-        SayMessageRequest:FireServer(Message, "All")
-    end
-end
-wait(math.random(12,14))
-end
+wSection:NewButton("Annoying Dual Pistols", "annoying", function()-- annoying dualpistols
+loadstring(game:HttpGet("https://pastebin.com/raw/vWMd3ErY"))()
 end)
+
+wSection:NewButton("Annoying Dual Pistols", "annoying", function()-- huge double barrel alien rifle
+loadstring(game:HttpGet("https://pastebin.com/raw/Ntq5K6gC"))()
+end)
+
+wSection:NewButton("KAKE", "gives u a kake tool to throw", function()-- KAIK 🎂 TOOL
+loadstring(game:HttpGet("https://textbin.net/raw/tccg5bly5b"))()
+end)
+
+wSection:NewButton("Kamikaze", "timed bomb vest💣", function()-- kamikaze time bomb
+loadstring(game:HttpGet("https://pastebin.com/raw/W34i4R8N"))()
+end)
+
+wSection:NewButton("Skull Smasher", "use mobile keyboard for movelist", function()-- SKULL SMASHER
+loadstring(game:HttpGet("https://pastebin.com/raw/tnevgHaV"))()
+end)
+
+wSection:NewButton("Dark Edged Dual Blades", "use mobile keyboard for movelist", function()-- dark edged dual blades
+loadstring(game:HttpGet("https://pastebin.com/raw/C334rgCT"))()
+end)
+
+wSection:NewButton("How to train your dragon", "gives u the pet from tbe movie", function()-- how to train your dragon pet
+loadstring(game:HttpGet("https://pastebin.com/raw/iQZ9PJ4x"))()
+end)
+
+wSection:NewButton("Water Rings", "yes", function()-- water rings
+loadstring(game:HttpGet("https://pastebin.com/raw/ijWxVpmf"))()
+end)
+
+wSection:NewButton("Dual Shield Lasers", "yes", function()-- dual dark shield lasers
+loadstring(game:HttpGet("https://pastebin.com/raw/XpzHT9Fh"))()
+end)
+
+wSection:NewButton("Glowing Matrix Man", "yes", function()-- glowing matrix runner
+loadstring(game:HttpGet("https://pastebin.com/raw/SwLFx5pw"))()
+end)
+
+wSection:NewButton("Robot Umbrella", "yes", function()-- dangerous umbrella
+loadstring(game:HttpGet("https://pastebin.com/raw/V78KfuNf"))()
+end)
+
+wSection:NewButton("Invisible Laser Shooter", "kool", function()-- invisible laser shooter
+loadstring(game:HttpGet("https://pastebin.com/raw/8Za5RNGH"))()
+end)
+
+wSection:NewButton("Dual Plasma Rifles", "yes", function()-- dual plasma shooter
+loadstring(game:HttpGet("https://pastebin.com/raw/HEvM7C2t"))()
+end)
+
+wSection:NewButton("Shotgun", "partner", function()-- shotgun
+loadstring(game:HttpGet("https://pastebin.com/raw/aMgrBsnQ"))()
+end)
+
+wSection:NewButton("Bomb Vest", "blow urself up", function()-- shotgun
+loadstring(game:HttpGet("https://pastebin.com/raw/aMgrBsnQ"))()
+end)
+
+wSection:NewButton("The Big Blank R6", "blank r6 guy", function()-- Blank R6 guy
+loadstring(game:HttpGet("https://pastebin.com/raw/pRETy1aA"))()
+end)
+
+wSection:NewButton("M86-SR Bipod", "snipeup", function()--M89-SR with Bipod
+loadstring(game:HttpGet("https://pastebin.com/raw/4sBhUxS0"))()
+end)
+
+wSection:NewButton("Unknown Magik", "magixian", function()-- unknown Magik
+loadstring(game:HttpGet("https://pastebin.com/raw/FSH0S4C2"))()
+end)
+
+wSection:NewButton("Unknown Magik", "no info", function()-- unknown Magik
+loadstring(game:HttpGet("https://pastebin.com/raw/FSH0S4C2"))()
+end)
+
+wSection:NewButton("Invisible Weapon", "no info", function()-- invisible weapon
+loadstring(game:HttpGet("https://pastebin.com/raw/GCUivFzA"))()
+end)
+
+wSection:NewButton("Speedy Winged Fighter", "no info", function()-- speedy winged fighter
+loadstring(game:HttpGet("https://pastebin.com/raw/RKPE68Gz"))()
+end)
+
+wSection:NewButton("Dual M1911's", "no info", function()-- dual m1911
+loadstring(game:HttpGet("https://pastebin.com/raw/N1Jr8BBd"))()
+end)
+
+wSection:NewButton("Winged Fire", "no info", function()-- Winged Fire
+loadstring(game:HttpGet("https://pastebin.com/L0GbxNfL"))()
+end)
+
 
 
 
 -- Home.TabMy.Skrpts
+
 local Home = Window:NewTab("Home")
 local HomeSection = Home:NewSection("Note: added walkspeed and jumppower setter🍭")
 
@@ -1250,7 +1339,7 @@ end)
 
 
 
---Propertie--
+--Open/Klose GUI frame--
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
