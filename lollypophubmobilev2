@@ -1021,7 +1021,7 @@ wSection:NewButton("Annoying Dual Pistols", "annoying", function()-- annoying du
 loadstring(game:HttpGet("https://pastebin.com/raw/vWMd3ErY"))()
 end)
 
-wSection:NewButton("Annoying Dual Pistols", "annoying", function()-- huge double barrel alien rifle
+wSection:NewButton("Alien Rifle", "annoying", function()-- huge double barrel alien rifle
 loadstring(game:HttpGet("https://pastebin.com/raw/Ntq5K6gC"))()
 end)
 
