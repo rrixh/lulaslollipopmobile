@@ -1,11 +1,11 @@
--- Gui to Lua LOLLYPOPHUB V4 UPDATED
--- Version: 4
+-- Gui to Lua LOLLYPOPHUB V4.1 UPDATED
+-- Version: 4.1
 -- toggle button added
 -- Instanxes:
 
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
-    Title = "LOLLYPOPHUB V4🍭😋🍭😋",
+    Title = "LOLLYPOPHUB V4.1🍭😋🍭😋",
     Text = "almost every skript in this joint",
     Duration = 8, 
 })
@@ -18,7 +18,7 @@ Text = "lulaslollipop🍭",
 })
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V4","Serpent")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V4.1","DarkTheme")
 
 --- yum lollypop hub V3.8
 --  LightTheme
@@ -33,13 +33,14 @@ local Window = Library.CreateLib("Lollypop Hub🍭 | V4","Serpent")
 --skripts tab
 local Skripts = Window:NewTab("Skripts")
 local SkriptsSection = Skripts:NewSection("Skript hub by lulaslollipop🍭😋")
+local SkriptsSection = Skripts:NewSection("update:better toggle button🍭")
 
 SkriptsSection:NewButton("99% fail impossible obby", "purple = ✅, red = ❌, green = ✅, tile broke, or 🔥 ", function()
 -- lulas 99 fail memory skript
 loadstring(game:HttpGet(('https://pastebin.com/raw/DhLMep63'),true))()
 end)
 
-SkriptsSection:NewButton("Heaven Map (99% fail)", "just anti-lag", function()
+SkriptsSection:NewButton("Heaven Map (99% fail)", "reduxe lag too", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/RW7ZT29m"))()
 end)
 
@@ -48,14 +49,8 @@ SkriptsSection:NewButton("Vietnam has joined notifier📢 (New)", "will send u a
 loadstring(game:HttpGet("https://pastebin.com/raw/C96cg2xG"))()
 end)
 
-SkriptsSection:NewButton("EXEKUTE A SKRIPT FROM XHAT", "exekute a skript frm msg box",
+SkriptsSection:NewButton("EXEKUTE SKRIPT FROM XHAT", "exekute a skript frm msg box",
 function()loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/chat-executor/main/chat-executor",true))()
-end)
-
-SkriptsSection:NewButton("Lonely Ragdoll", "for 99% fail impossible obby",
-function()local ohInstance1 = game.Players.LocalPlayer.Character.Humanoid
-
-game:GetService("ReplicatedStorage").OnRagdoll:FireServer(ohInstance1)
 end)
 
 local SkriptsSection = Skripts:NewSection("Skripts")
@@ -84,7 +79,13 @@ SkriptsSection:NewButton("WALKSPEED GUI", "+ -", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/2gGvc9ya"))()
 end)
 
-SkriptsSection:NewButton("Kredit", "ty to me😍🍭", function()
+SkriptsSection:NewButton("Lonely Ragdoll", "for 99% fail impossible obby",
+function()local ohInstance1 = game.Players.LocalPlayer.Character.Humanoid
+
+game:GetService("ReplicatedStorage").OnRagdoll:FireServer(ohInstance1)
+end)
+
+SkriptsSection:NewButton("Kredits", "ty to me😍🍭", function()
 -- F9/ Generated konsole
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LULASLOLLIPOP THE BEST🍭💓🍭💓","All")
 end)
@@ -654,21 +655,37 @@ loadstring(game:HttpGet('https://pastebin.com/raw/0BsHnxbk'))()
 end)
 
 -- KEybind tools
-ToolsSection:NewButton("Q Tool", "give u Q key from 💻 as a tool",
+ToolsSection:NewButton("{Q} Tool", "give u Q key from 💻 as a tool",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/5ZgW4X4q"))()
 end)
 
-ToolsSection:NewButton("Z Tool", "give u Z key from 💻 as a tool",
+ToolsSection:NewButton("{Z} Tool", "give u Z key from 💻 as a tool",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/HVTtz0JU"))()
 end)
 
-ToolsSection:NewButton("X Tool", "give u X key from 💻 as a tool",
+ToolsSection:NewButton("{X} Tool", "give u X key from 💻 as a tool",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/VkFTvruh"))()
 end)
 
-ToolsSection:NewButton("C Tool", "give u C Key from 💻 as a tool",
+ToolsSection:NewButton("{C} Tool", "give u C Key from 💻 as a tool",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/wgxcSj5N"))()
 end)
+--Insert.keynum.toggle
+ToolsSection:NewButton("Toggle Tool", "gives u the 'Toggle' button as a tool {Insert}",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/CjnNRWnK"))()
+end)
+
+ToolsSection:NewButton("{RightKontrol} Tool", "gives u the right ktrl key frm 💻 as a tool",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/sD1NK6a7"))()
+end)
+
+ToolsSection:NewButton("{LeftKontrol} Tool", "gives u the left ktrl button frm 💻 as a tool",
+function()loadstring(game:HttpGet("https://pastebin.com/raw/NdEpUa4k"))()
+end)
+
+
+
+
 
 
 -- hubs and gui
@@ -1226,42 +1243,70 @@ loadstring(game:HttpGet("https://pastebin.com/raw/yLMTk28W"))()
 --toggle the ui yes
 local MoreSection = More:NewSection("no")
 
-MoreSection:NewKeybind("Toggle ui", "toggle the ui yes", Enum.KeyCode.LeftControl, function()
+MoreSection:NewKeybind("Toggle ui", "toggle the ui yes", Enum.KeyCode.Insert, function()
     Library:ToggleUI()
 end)
 
 
+
+
+--Propertie--
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local Frame2 = Instance.new("Frame")
+local TextButton2 = Instance.new("TextButton")
 
---Properties:
-
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = game.CoreGui
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(34,139,34)
-Frame.BackgroundTransparency = 0.500
-Frame.Position = UDim2.new(0.858712733, 0, 0.1050062257, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(0,255,0)
+Frame.Position = UDim2.new(0, 0, 0.40, 0)
 Frame.Size = UDim2.new(0, 90, 0, 30)
+Frame.Active = true
+Frame.Draggable = true
 
 TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-TextButton.BackgroundTransparency = 1.000
-TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.BackgroundColor3 = Color3.fromRGB(148,0,211)
+TextButton.Size = UDim2.new(0, 90, 0, 30)
 TextButton.Font = Enum.Font.GothamBold
-TextButton.Text = "Toggle"
+TextButton.Text = "OPEN"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
 TextButton.TextSize = 22.000
-TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextStrokeTransparency = 0.000
-TextButton.TextWrapped = true
-TextButton.MouseButton1Down:Connect(function()
-	game:GetService("VirtualInputManager"):SendKeyEvent(true, "LeftControl" , false , game)
+TextButton.MouseButton1Click:connect(function()
+Frame.Visible = false
+Frame2.Visible = true    
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "Insert", false, game)
 end)
 
-UITextSizeConstraint.Parent = TextButton
-UITextSizeConstraint.MaxTextSize = 40
+Frame2.Parent = ScreenGui
+Frame2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Frame2.Position = UDim2.new(0, 0, 0.40, 0)
+Frame2.Size = UDim2.new(0, 90, 0, 30)
+Frame2.Active = true
+Frame2.Draggable = true
+
+TextButton2.Parent = Frame2
+TextButton2.BackgroundColor3 = Color3.fromRGB(128, 0, 32)
+TextButton2.Size = UDim2.new(0, 90, 0, 30)
+TextButton2.Font = Enum.Font.GothamBold
+TextButton2.Text = "KLOSE"
+TextButton2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton2.TextSize = 22.000
+TextButton2.MouseButton1Click:connect(function()
+    Frame2.Visible = false
+    Frame.Visible = true
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "Insert", false, game)
+end)
+
+
+
+
+
+Frame.Parent.Active = true
+Frame.Parent.Draggable = true
+
+
+---end--
