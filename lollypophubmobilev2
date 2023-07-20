@@ -1089,10 +1089,6 @@ wSection:NewButton("Unknown Magik", "magixian", function()-- unknown Magik
 loadstring(game:HttpGet("https://pastebin.com/raw/FSH0S4C2"))()
 end)
 
-wSection:NewButton("Unknown Magik", "no info", function()-- unknown Magik
-loadstring(game:HttpGet("https://pastebin.com/raw/FSH0S4C2"))()
-end)
-
 wSection:NewButton("Invisible Weapon", "no info", function()-- invisible weapon
 loadstring(game:HttpGet("https://pastebin.com/raw/GCUivFzA"))()
 end)
