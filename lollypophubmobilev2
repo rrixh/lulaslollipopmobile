@@ -1,11 +1,11 @@
--- Gui to Lua LOLLYPOPHUB V4.1 UPDATED
--- Version: 4.1
+-- Gui to Lua LOLLYPOPHUB V4.3 UPDATED
+-- Version: 4.3
 -- toggle button added
 -- Instanxes:
 
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
-    Title = "LOLLYPOPHUB V4.1🍭😋🍭😋",
+    Title = "LOLLYPOPHUB V4.3🍭😋🍭😋",
     Text = "almost every skript in this joint",
     Duration = 8, 
 })
@@ -20,7 +20,7 @@ Text = "lulaslollipop🍭",
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = Library.CreateLib("Lollypop Hub🍭 | V4.1","DarkTheme")
 
---- yum lollypop hub V3.8
+--- yum lollypop hub V4.3
 --  LightTheme
 --  DarkTheme
 --  GrapeTheme
@@ -1002,7 +1002,7 @@ end)
 
 
 -- weapons.forFun tab
-local w = Window:NewTab("Weapons/Banishers")
+local w = Window:NewTab("Weapons & Banishers")
 local wSection = w:NewSection("fun things")
 
 wSection:NewButton("Non-FE Skripthub (old)", "some dont work", function()-- NONFE HUB
