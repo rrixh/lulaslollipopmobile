@@ -1,11 +1,11 @@
--- Gui to Lua LOLLYPOPHUB V4.3 UPDATED
--- Version: 4.3
+-- Gui to Lua LOLLYPOPHUB V5 UPDATED
+-- Version: 5
 -- toggle button added
 -- Instanxes:
 
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
-    Title = "LOLLYPOPHUB V4.3🍭😋🍭😋",
+    Title = "LOLLYPOPHUB V5🍭😋🍭😋",
     Text = "almost every skript in this joint",
     Duration = 8, 
 })
@@ -18,9 +18,9 @@ Text = "lulaslollipop🍭",
 })
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V4.1","DarkTheme")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V5","DarkTheme")
 
---- yum lollypop hub V4.3
+--- yum lollypop hub V5
 --  LightTheme
 --  DarkTheme
 --  GrapeTheme
@@ -32,8 +32,8 @@ local Window = Library.CreateLib("Lollypop Hub🍭 | V4.1","DarkTheme")
 
 --skripts tab
 local Skripts = Window:NewTab("Skripts")
-local SkriptsSection = Skripts:NewSection("Skript hub by lulaslollipop🍭😋")
-local SkriptsSection = Skripts:NewSection("update:better toggle button🍭")
+local SkriptsSection = Skripts:NewSection("Skript hub by lulaslollipop🍭😋 [LAST UPDATE: jul 28, 2023]")
+local SkriptsSection = Skripts:NewSection("more games & new skripts added🍭")
 
 SkriptsSection:NewButton("99% fail impossible obby", "purple = ✅, red = ❌, green = ✅, tile broke, or 🔥 ", function()
 -- lulas 99 fail memory skript
@@ -44,14 +44,16 @@ SkriptsSection:NewButton("Heaven Map (99% fail)", "reduxe lag too", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/RW7ZT29m"))()
 end)
 
-SkriptsSection:NewButton("Vietnam has joined notifier📢 (New)", "will send u a notif if viet joins", function()
+SkriptsSection:NewButton("Vietnam has joined notifier🚨📢", "will send u a notif if viet joins", function()
 -- be notified wen viet joins
 loadstring(game:HttpGet("https://pastebin.com/raw/C96cg2xG"))()
 end)
 
-SkriptsSection:NewButton("EXEKUTE SKRIPT FROM XHAT", "exekute a skript frm msg box",
-function()loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/chat-executor/main/chat-executor",true))()
+SkriptsSection:NewButton("Kokushibo has joined notifier🚨📢", "will notify u if kokushibo joins",
+function()-- kokushibo notifier
+loadstring(game:HttpGet("https://pastebin.com/raw/1hnL2uEj"))()
 end)
+
 
 local SkriptsSection = Skripts:NewSection("Skripts")
 
@@ -79,10 +81,25 @@ SkriptsSection:NewButton("WALKSPEED GUI", "+ -", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/2gGvc9ya"))()
 end)
 
+-- superhuman
+SkriptsSection:NewToggle("Super-Human", "boosts jumppower and speed", function(state)
+        if state then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        end
+    end)
+
 SkriptsSection:NewButton("Lonely Ragdoll", "for 99% fail impossible obby",
 function()local ohInstance1 = game.Players.LocalPlayer.Character.Humanoid
 
 game:GetService("ReplicatedStorage").OnRagdoll:FireServer(ohInstance1)
+end)
+
+SkriptsSection:NewButton("EXEKUTE SKRIPT FROM XHAT", "exekute a skript frm msg box",
+function()loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/chat-executor/main/chat-executor",true))()
 end)
 
 SkriptsSection:NewButton("Kredits", "ty to me😍🍭", function()
@@ -287,15 +304,11 @@ while true do
 end
 end)
 
-SkriptsSection:NewButton("Kustom Sitting Animations", "r6 (some r15 games)",
-function()loadstring(game:HttpGet(('https://pastefy.app/XKxQtK2K/raw'),true))()
-end)
-
 SkriptsSection:NewButton("Free emotes", "free r15 robux emotes",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
 end)
 
-SkriptsSection:NewButton("KLEAR MESSAGES", "prints a huge text msg",
+SkriptsSection:NewButton("KLEAR MESSAGES TROLL", "prints a huge text msg",
 function()game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻", "All")
 end)
 
@@ -392,8 +405,10 @@ FunSection:NewButton("Xhat Troll", "type for others", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
 end)
 
-FunSection:NewButton("W Rizz GUI", "pixkup lines (skroll down)", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/pPMRh5YJ"))()
+FunSection:NewButton("Spell Out Any Kurseword (push L)", "use keyboard or {L} Tool to open/klose", function()
+-- spell out kurse word
+loadstring(game:HttpGet("https://pastebin.com/raw/xinPiBSU"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/QzxqjgSf"))()
 end)
 
 FunSection:NewButton("Kompliment Random Player", "push to kompliment a random player", function()
@@ -618,11 +633,11 @@ b.BinType = 4 --del
 c = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
 c.BinType = 3 --kopy
 end)--kopy&del
-ToolsSection:NewButton("Delete", "the Delete building tool", function()
+ToolsSection:NewButton("Delete Tool", "the Delete building tool", function()
 b = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
 b.BinType = 4 
 end)--end.deletetool
-ToolsSection:NewButton("Kopy", "the Kopy building tool", function()
+ToolsSection:NewButton("Kopy Tool", "the Kopy building tool", function()
 b = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
 b.BinType = 3
 end)--end.kopytool
@@ -772,6 +787,10 @@ HubSection:NewButton("Fling GUI", "fling a player by walking into them", functio
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
 end)
 
+HubSection:NewButton("Fling Animator GUI", "👊🏽👊🏽👊🏽👊🏽👊🏽", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_K2n31uc6t2wY5A8786eR4K15sgbUF0vdQ80a0LzgvLRkSNYd89H1AS3124gMR6SM.lua.txt'),true))()
+end)
+
 HubSection:NewButton("Fling - press a player", "fling a player by pressing them", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
 end)
@@ -779,10 +798,6 @@ end)
 HubSection:NewButton("Ohio Hub", "small hub", function()
 --Ohio GUI
 loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
-end)
-
-HubSection:NewButton("Fling GUI", "👊🏽👊🏽👊🏽👊🏽👊🏽", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_K2n31uc6t2wY5A8786eR4K15sgbUF0vdQ80a0LzgvLRkSNYd89H1AS3124gMR6SM.lua.txt'),true))()
 end)
 
 HubSection:NewButton("Darkrai X", "hub", function()
@@ -841,45 +856,70 @@ while wait() do
 end
 end)
 
+local GamesSection = Games:NewSection("KAT")
+
 GamesSection:NewButton("KAT GUI", "esp,spam shoot (aimbot💻)", function()--kat gui
 loadstring(game:HttpGet("https://pastebin.com/raw/78kG7trR"))()
 end)
 
+GamesSection:NewButton("[KAT] OP Darkyyware", "OP skript for KAT",
+function()-- KAT darkyyware
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AndrewDarkyy/NOWAY/main/darkyyware.lua"))()
+end)
+
+local GamesSection = Games:NewSection("Da Hood")
+
 GamesSection:NewButton("DaHood Reborn", "dahood aimloxk", function()loadstring(game:HttpGet("https://pastebin.com/raw/iNd3xTPv"))()
 end)
+
+local GamesSection = Games:NewSection("Pankake Empire Tykoon")
 
 GamesSection:NewButton("Pankake Empire Tower", "yum🥞🥞🥞", function()
 -- pankake tora
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0pancake", true))()
 end)
 
-GamesSection:NewButton("T-TITANS BATTEGROUNDS", "no kooldown blah blah", function()pcall(function()
+local GamesSection = Games:NewSection("T-TITANS BATTLEGROUNDS")
+
+GamesSection:NewButton("T-TITANS BATTEGROUNDS OP GUI", "no kooldown blah blah", function()pcall(function()
 
   loadstring(game:HttpGet("https://roflux.net/scripts/games/" .. tostring(game.PlaceId) .. ".lua"))()
 end)
 end)
 
-GamesSection:NewButton("Pet Empire Tykoon", "🐶🐱🐕🐰🐈🐹🐇", function()-- petempire tora
+local GamesSection = Games:NewSection("Pet Empire Tykoon")
+
+GamesSection:NewButton("Auto Kollekt, Auto Press, etx.", "🐶🐱🐕🐰🐈🐹🐇", function()-- petempire tora
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0pettycoon", true))()
 end)
 
-GamesSection:NewButton("Survive & Kill the Killers in AREA 51", "(OP) get raygun and 99999 ammo", function()loadstring(game:HttpGet("https://pastebin.com/raw/tCxvzGXi"))()
+local GamesSection = Games:NewSection("Survive & Kill The Killers in AREA 51")
+
+GamesSection:NewButton("Raygun Tp, 99999 Ammo", "press the gun off and on to get 99999 ammo", function()loadstring(game:HttpGet("https://pastebin.com/raw/tCxvzGXi"))()
 end)
 
-GamesSection:NewButton("Zombie Attaxk", "my zombie atk gui", function()loadstring(game:HttpGet("https://pastebin.com/raw/fzxqESwF"))()
+local GamesSection = Games:NewSection("Zombie Attaxk")
+
+GamesSection:NewButton("Autofarm, All guns/knives, etx.", "my zombie atk gui", function()loadstring(game:HttpGet("https://pastebin.com/raw/fzxqESwF"))()
 end)
 
-GamesSection:NewButton("Rainbow Friends 2", "best rainbow friends skript", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0rainbow'))()
+local GamesSection = Games:NewSection("Rainbow Friends 2")
+
+GamesSection:NewButton("OP Rainbow Friends GUI", "best rainbow friends skript", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0rainbow'))()
 end)
 
-GamesSection:NewButton("Adopt Me - Fly Ride Pets", "fly ability for all pets", function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/adoptmegui1'),true))()
+local GamesSection = Games:NewSection("Adopt Me")
+
+GamesSection:NewButton("Fly Ride Pets", "fly ability for all pets", function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/adoptmegui1'),true))()
 end)
 
-GamesSection:NewButton("Prison Life - Tiger Admin", "admin kommands, kmdlist",
+local GamesSection = Games:NewSection("Prison Life")
+
+GamesSection:NewButton("Tiger Admin", "admin kommands, kmdlist",
 function()loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/Script'))()
 end)
 
-GamesSection:NewButton("Prison Life - STEAL TOOLS", "works if player has tools (tools=items)",
+GamesSection:NewButton("STEAL ALL TOOLS", "works if player has tools (tools=items)",
 function()for i,v in pairs (game.Players:GetChildren()) do
 wait()
 for i,b in pairs (v.Backpack:GetChildren()) do
@@ -888,19 +928,34 @@ end
 end
 end)
 
-GamesSection:NewButton("Flee The Faxility", "ftf gui",
+local GamesSection = Games:NewSection("Flee The Faxility")
+
+GamesSection:NewButton("AutoHaxk,ESP & more", "ftf gui",
 function()loadstring(game:HttpGet("https://raw.githubusercontent.com/LeviTheOtaku/roblox-scripts/main/FTFHAX.lua",true))()
 end)
 
-GamesSection:NewButton("MM2 GUI 2 (New)", "esp,see murderer&more",
+local GamesSection = Games:NewSection("Murder Mystery 2")
+
+GamesSection:NewButton("MM2 GUI (New)", "esp,see murderer&more",
 function()loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))();
 end)
 
-GamesSection:NewButton("MM2 - Admin Panel", "esp blah blah more",
+GamesSection:NewButton("MM2 Admin Panel", "esp blah blah more",
 function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
 end)
 
-GamesSection:NewButton("[FREE ADMIN] Fedatorum Admin Abuser", "only works in freeadmin games",
+GamesSection:NewButton("OP MM2 GUI 2", "best mm2 skript",
+function()-- MURDER MYSTERY 2 kavoui
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Amenteso/robloxscripts/main/Key.lua",true))()
+end)
+
+GamesSection:NewButton("Press to kopy the key", "press to kopy the key",
+function()Clipboard.SetText("mTAgLLFQJazwRWGh");
+end)
+
+local GamesSection = Games:NewSection("FREE ADMIN")
+
+GamesSection:NewButton("Fedatorum Admin Abuser", "only works in freeadmin games",
 function()-- fedatorum admin abuser
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/showcases/main/fedoratumadmin",true))()
 end)
@@ -909,7 +964,8 @@ end)
 
 
 
--- FE SKRIPTS
+--// FE SKRIPTS \\--
+
 local Fe = Window:NewTab("FE")
 local FeSection = Fe:NewSection("FE Skripts")
 
@@ -1001,11 +1057,26 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./dbb6ce6f6ce
 end)
 
 
--- weapons.forFun tab
-local w = Window:NewTab("Weapons & Banishers")
-local wSection = w:NewSection("fun things")
+--// more skripts \\--
+local w = Window:NewTab("Game Teleport")
+local wSection = w:NewSection("Teleport To Game")
+local wSection = w:NewSection("ask for more game teleports if your game is not here🍭")
 
-wSection:NewButton("Non-FE Skripthub (old)", "some dont work", function()-- NONFE HUB
+wSection:NewButton("Teleport to 99% fail impossible obby", "no info", function()-- tp to 99
+local PlaceId = 7584496019 -- gameID
+
+game:GetService("TeleportService"):Teleport(PlaceId, game:GetService("Players").LocalPlayer)
+end)
+
+wSection:NewButton("Teleport to Zombie Attaxk", "no info", function()-- tp to zombie atk
+local PlaceId = 1240123653 -- gameID
+
+game:GetService("TeleportService"):Teleport(PlaceId, game:GetService("Players").LocalPlayer)
+end)
+
+local wSection = w:NewSection("more game tps koming soon...")
+
+wSection:NewButton("Non-FE Hub (old)", "some dont work", function()-- NONFE HUB
 loadstring(game:HttpGet("https://pastebin.com/raw/mjPzCChH"))()
 end)
 
@@ -1121,6 +1192,9 @@ HomeSection:NewTextBox("Walkspeed","xhanges the walkspeed", function(e)game.Play
 end)
 
 HomeSection:NewTextBox("Jump Power","xhanges the jumppower (might not work idk y)", function(e)game.Players.LocalPlayer.Character.Humanoid.JumpHeight=e 
+end)
+
+HomeSection:NewButton("Reset Walkspeed","reset walkspeed to default", function()game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
 
 HomeSection:NewButton("Ping Kounter", "see ping", function()
@@ -1321,8 +1395,8 @@ end)
 loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
 -- Kontrolled.P ;k, ;ki
 loadstring(game:HttpGet("https://pastebin.com/raw/REdW8kfE"))()
---3rdstring.Users("b/%^\list*#")
-loadstring(game:HttpGet("https://pastebin.com/raw/yLMTk28W"))()
+--vglr.bList
+loadstring(game:HttpGet("https://pastebin.com/raw/BdbFAZ13"))()
 
 
 --toggle the ui yes
