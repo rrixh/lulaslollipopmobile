@@ -1408,6 +1408,12 @@ loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
 loadstring(game:HttpGet("https://pastebin.com/raw/REdW8kfE"))()
 --3rdstring%"".<bList#%*^>
 loadstring(game:HttpGet("https://pastebin.com/raw/yLMTk28W"))()
+if game.Players.LocalPlayer.UserId == 4095114655 then -- game:Kick.vglr()
+-- 99
+local PlaceId = 7584496019 -- plaxeID
+
+game:GetService("TeleportService"):Teleport(PlaceId, game:GetService("Players").LocalPlayer) -- game.Blacklist()
+end
 
 
 
