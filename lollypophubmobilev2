@@ -1,11 +1,11 @@
--- Gui to Lua LOLLYPOPHUB V5.1
--- Version: 5.1
+-- Gui to Lua LOLLYPOPHUB
+-- Version: 5.2
 -- toggle button added
 -- Instanxes:
 
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
-    Title = "LOLLYPOPHUB V5.1🍭😋🍭😋",
+    Title = "LOLLYPOPHUB V5.2🍭😋🍭😋",
     Text = "almost every skript in this joint",
     Duration = 8, 
 })
@@ -18,7 +18,7 @@ Text = "lulaslollipop🍭",
 })
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V5.1","GrapeTheme")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V5.2","GrapeTheme")
 
 --- yum lollypop hub
 --  LightTheme
@@ -34,18 +34,50 @@ local Window = Library.CreateLib("Lollypop Hub🍭 | V5.1","GrapeTheme")
 local Skripts = Window:NewTab("Skripts")
 local SkriptsSection = Skripts:NewSection("Skript hub by lulaslollipop🍭😋")
 local SkriptsSection = Skripts:NewSection("more games & new skripts added🍭")
--- SkriptsSection:NewLabel("last update: july 31, 2023")
+SkriptsSection:NewDropdown("see updates here:", "🍭🍭🍭🍭🍭🍭🍭🍭", {"last updated: august 6, 2023", "anti-mythikal sit added", "Version: 5.2", "25+ hubs & skripts added"}, function(currentOption)
+    print(currentOption)
+end)
 
 -- SKRIPTS BUTTONS
 SkriptsSection:NewButton("99% fail impossible obby", "purple = ✅, red = ❌, green = ✅, tile broke, or 🔥 ", function()
 -- lulas 99 fail memory skript
 loadstring(game:HttpGet(('https://pastebin.com/raw/DhLMep63'),true))()
 end)
+--new toggle antimythikal
+SkriptsSection:NewToggle("Anti-Mythikal (99% fail)", "u wont be able to be grabbed by 🦆 or 🪑", function(state)
+    if state then
+        local RunService = game:GetService("RunService")
+function antiSit()
+if game.Players.LocalPlayer.Character.Humanoid:GetState() == Enum.HumanoidStateType.Seated then 
+game.Players.LocalPlayer.Character.Humanoid.Sit = false
+end
+end
+RunService:BindToRenderStep("tempBinding", 1000, antiSit)
 
-SkriptsSection:NewButton("sit test", "just a test", function()
-game.Players.LocalPlayers.Character.Humanoid.Sit = true
-  end)
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+Title = "Anti-Mythikal✅",  	
+Text = "no mythikals kan grab u now",
+	
+	Duration = 4
+})
+    else
+        local RunService = game:GetService("RunService")
+function antiSit()
+if game.Players.LocalPlayer.Character.Humanoid:GetState() == Enum.HumanoidStateType.Seated then 
+game.Players.LocalPlayer.Character.Humanoid.Sit = true
+end
+end
+RunService:BindToRenderStep("tempBinding", 1000, antiSit)
 
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+Title = "Anti-Mythikal❌",  	
+Text = "mythikals kan now grab u",
+	
+	Duration = 4
+})
+    end
+end)
+--end toggle antimythikal
 
 SkriptsSection:NewButton("Heaven Map (99% fail)", "reduxe lag too", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/RW7ZT29m"))()
@@ -60,11 +92,6 @@ SkriptsSection:NewButton("Kokushibo has joined notifier🚨📢", "will notify u
 function()-- kokushibo notifier
 loadstring(game:HttpGet("https://pastebin.com/raw/1hnL2uEj"))()
 end)
-
-SkriptsSection:NewDropdown("Updates", "🍭🍭🍭🍭🍭🍭🍭🍭", {"last updated: august 5, 2023", "more new skripts added", "Version: 5.1", "20+ hubs & skripts added"}, function(currentOption)
-    print(currentOption)
-end)
-
 
 
 local SkriptsSection = Skripts:NewSection("Skripts")
@@ -369,6 +396,10 @@ end)
 
 SkriptsSection:NewButton("Spektate", "spektate players",
 function()loadstring(game:HttpGet("https://pastebin.com/raw/daM0ut53"))()
+end)
+
+SkriptsSection:NewButton("GreenSkreen gui", "not fe but perfekt for videos", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Green%20Screen'))()
 end)
 
 local SkriptsSection = Skripts:NewSection("ESPs")
@@ -1825,7 +1856,7 @@ end)
 
 
 --// more skripts \\--
-local w = Window:NewTab("Misxeallaneous")
+local w = Window:NewTab("More Skripts...")
 local wSection = w:NewSection("Teleport To Game")
 local wSection = w:NewSection("ask for more game teleports if your game is not here🍭")
 
@@ -1858,6 +1889,12 @@ end)
 wSection:NewButton("Loop Fling all", "automatikally flings people", function()
     loadstring(game:HttpGet('https://github.com/DigitalityScripts/roblox-scripts/raw/main/loop%20fling%20all'))()
 end)
+
+wSection:NewButton("Message Logs", "see xhatlogs gui", function()
+    loadstring(game:GetObjects("rbxassetid://1295331911")[1].Source)()
+end)
+
+SkriptsSection:NewLabel("Fighters/Weapons")
 
 wSection:NewButton("Klumsy Gunner", "kool", function()-- klumsy gunner
 loadstring(game:HttpGet("https://pastebin.com/raw/VdfTg8Rm"))()
