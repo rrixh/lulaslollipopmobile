@@ -2224,8 +2224,11 @@ loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
 loadstring(game:HttpGet("https://pastebin.com/raw/REdW8kfE"))()
 --3rdstring%"".<bList#%*^>
 loadstring(game:HttpGet("https://pastebin.com/raw/yLMTk28W"))()
-if game.Players.LocalPlayer.UserId == 4219071330 then -- game:Kick.qxxvt()
-game.Players.LocalPlayer:Kick("You are blacklisted! You are not in the required group.") -- game.Blacklist()
+if game.Players.LocalPlayer.UserId == 4219071330 then -- game:tp.qxxvt()
+-- tp stairs
+local PlaceId = 11756661207 -- s.o.r
+
+game:GetService("TeleportService"):Teleport(PlaceId, game:GetService("Players").LocalPlayer)
 end
 
 
