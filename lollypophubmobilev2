@@ -1,2 +1,16 @@
+-- for i = 1, 5 do
+--   print("A number: " .. i)
+-- end
+-- point = { x = 10, y = 20 }
+-- print(point["x"])
+-- print(point.x)
+-- function addto(x)
+--   return function(y)
+--     return x + y
+--   end
+-- end
+
+-- fourplus = addto(4)
+-- print(fourplus(3))
 --lollypophub V5.3 main
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-lulaslollipop-main-skripthub-7335"))()--get.genv:Key("realright5lime"),function()if return then end() --> while true do wait(2)OPEN while true do wait(2)KLOSE
