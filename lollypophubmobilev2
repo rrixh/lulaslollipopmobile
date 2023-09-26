@@ -2345,11 +2345,9 @@ function()-- teleport behind xhest
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-921.2446899414062, 1995.87255859375, -150.1106719970703)
 end)
 
-MoreSection:NewButton("Teleport to Danger Zone", "teleport to the xhest",
-function()-- tp to dz
-Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(253.8822479248047,
-1995.86083984375
--149.1727752685547)
+MoreSection:NewButton("Teleport to Danger Zone", "teleport to the xhest", function()
+    --tp to dz
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(253.8822479248047, 1995.86083984375, -149.1727752685547)
 end)
 
 MoreSection:NewButton("Teleport to Winners Room", "teleport to the golden room",
