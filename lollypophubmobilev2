@@ -1,11 +1,11 @@
 -- Gui to Lua LOLLYPOPHUB
--- Version: 5.8
+-- Version: 5.6
 -- toggle button added
 -- Instanxes:
 
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
-    Title = "LOLLYPOPHUB V5.8🍭😋🍭😋",
+    Title = "LOLLYPOPHUB V5.6🍭😋🍭😋",
     Text = "almost every skript in this joint",
     Duration = 8, 
 })
@@ -18,7 +18,7 @@ Text = "lulaslollipop🍭",
 })
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V5.8","BloodTheme")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V5.6 | (5.8 broke)","Ocean")
 
 ---//yum lollypop hub\\--
 -- LightTheme
@@ -35,7 +35,7 @@ local Window = Library.CreateLib("Lollypop Hub🍭 | V5.8","BloodTheme")
 --skripts tab
 local Skripts = Window:NewTab("Skripts")
 local SkriptsSection = Skripts:NewSection("Skript hub by lulaslollipop🍭😋")
-SkriptsSection:NewDropdown("NEW:", "updates here", {"last updated: SEP 25, 2023", "Version: 5.8", "R6 pose gui", "v5.6 added if some skripts dont work", "xheru is a dum ass"}, function(currentOption)
+SkriptsSection:NewDropdown("see updates:", "updates here", {"last updated: SEP 26, 2023", "Version: 5.6", "5.8 broke", "added skripts from 5.8"}, function(currentOption)
     print(currentOption)
 end)
 
@@ -44,7 +44,6 @@ SkriptsSection:NewButton("99% fail impossible obby memory skript", "purple = ✅
 -- lulas 99 fail memory skript
 loadstring(game:HttpGet(('https://pastebin.com/raw/DhLMep63'),true))()
 end)
-
 --new toggle antimythikal
 SkriptsSection:NewToggle("Anti-Sit (99% fail mythikals)", "kinda good but i prefer using godmode", function(state)
     if state then
@@ -95,12 +94,6 @@ function()-- kokushibo notifier
 loadstring(game:HttpGet("https://pastebin.com/raw/1hnL2uEj"))()
 end)
 
-SkriptsSection:NewButton("LOLLYPOP HUB V5.6", "use if some skripts dont work in the latest version",
-function()
-    --lollypophub v5.6
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-LOLLYPOP-HUB-v56-8124",true))()
-end)
-
 
 local SkriptsSection = Skripts:NewSection("Skripts")
 
@@ -128,17 +121,10 @@ SkriptsSection:NewButton("Aimbot(R6 only)", "simple aimbot skript by me", functi
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-AIMBOT-SKRIPT-6783"))()
 end)
 
-SkriptsSection:NewButton("R6 pose gui", "pose", function()
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
-Library.DefaultColor = Color3.fromRGB(50,205,50)
-
-Library:Notification({
-    Text = "hope this shit still work",
-    Duration = 4
-})
+SkriptsSection:NewButton("Aimbot 2", "aimbot", function()
     
-    --r6 posegui
-loadstring(game:HttpGet('https://pastebin.com/raw/sZMn81tZ'))()
+    -- aimbot print 
+loadstring(game:HttpGet("https://pastebin.com/raw/i9QLTtbD"))()
 end)
 
 -- superhuman
@@ -304,11 +290,27 @@ function()
 Library.DefaultColor = Color3.fromRGB(50,205,50)
 
 Library:Notification({
-    Text = "use Z to toggle on/off",
-    Duration = 7
+    Text = "NIGGAMODE! jk godmode",
+    Duration = 5
 })
-    --gmoblist
-loadstring(game:HttpGet("https://pastebin.com/raw/RWLVhV4N"))()
+    
+    -- fe brixk toggle press Z 
+loadstring(game:HttpGet("https://pastebin.com/raw/6g3h9cDB"))()
+--{[blist.&]}--
+loadstring(game:HttpGet("https://pastebin.com/raw/P1Yrf09M"))()
+end)
+
+SkriptsSection:NewButton("GodMode2", "use this if the regular one doesnt work anymore",
+function()
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+Library.DefaultColor = Color3.fromRGB(50,205,50)
+
+Library:Notification({
+    Text = "NIGGAMODE! kause the other one dont work",
+    Duration = 5
+})
+    -- fe brixk toggle press Z 
+loadstring(game:HttpGet("https://pastebin.com/raw/6g3h9cDB"))()
 end)
 
 SkriptsSection:NewButton("GodMode V2", "no death 99% fail and survive kill brixks",
@@ -887,9 +889,7 @@ local Admin = Window:NewTab("Admin")
 local AdminSection = Admin:NewSection("Admin Kommands")
 
 AdminSection:NewButton("Infinite Yield", "type the kommand in the kommand bar", function()
-    
---many kommands use ;equiptools for the fun
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
 
 AdminSection:NewButton("Fates Admin", "default prefix :", function()
@@ -934,6 +934,8 @@ FunSection:NewButton("Krawl", "simple krawl gui", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_vZDX8j5ggfAf58QhdJ59BVEmF6nmZgq4Mcjt2l8wn16CiStIW2P6EkNc605qv9K4.lua.txt'))()
 end)
 
+
+
 local FunSection = Fun:NewSection("Message Fun")
 
 FunSection:NewButton("Fake Message Troll", "type for others", function()
@@ -954,14 +956,16 @@ FunSection:NewButton("Kompliment V2", "makes u say a kompliment", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/0HidbJsd"))()
 end)
 
+
+
 FunSection:NewButton("Auto Exkuse", "auto msg wen u die", function()
 getgenv().dmsgs = {
-  deathmessages = {"i was lagging", "that wasnt fair", "bruh", "dude", "i was doing something", "whyyyyy", "that wasnt fair"}
+  deathmessages = {"i was lagging", "that wasnt fair", "bruh", "dude", "i was doing something", "whyyyyy", "that wasnt fair", "wow"}
 }
 --[[
 Auto-Exkuse
 ]]--
-loadstring(game:HttpGet("https://raw.githubusercontent.com/goldmoments/auto-excuse/main/Script"))("Auto-Exkuse Script | lulaslollipop#0140") 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/goldmoments/auto-excuse/main/Script"))("Auto-Exkuse Script | lulaslollipoo#0140") 
 end)
 
 FunSection:NewButton("Kopy Server Messages", "repeats all players messages", function()local ReplicatedStorage = game:FindService("ReplicatedStorage")
@@ -1294,6 +1298,10 @@ end)
 
 HubSection:NewButton("Anime Hub 😍", "v6.1", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TakeModzz/Games-Hub-Script/main/Games%20Hub%20(Always%20updated)"))()
+end)
+
+HubSection:NewButton("R6 pose gui", "pose📸",
+function()loadstring(game:HttpGet('https://pastebin.com/raw/sZMn81tZ'))()
 end)
 
 HubSection:NewButton("LegonX Hub", "kool and Many skripts", function()
@@ -2383,7 +2391,6 @@ loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
 loadstring(game:HttpGet("https://pastebin.com/raw/REdW8kfE"))()
 --3rdstring%"".<blist#%*^>
 loadstring(game:HttpGet("https://pastebin.com/raw/P1Yrf09M"))()
---\//\/game;end.f%20ake.skript--\\
 
 
 
@@ -2448,4 +2455,12 @@ local vim = game:service("VirtualInputManager")
 vim:SendKeyEvent(true, "Insert", false, game)
 end)
 
----end---
+
+
+
+
+Frame.Parent.Active = true
+Frame.Parent.Draggable = true
+
+
+---end----
