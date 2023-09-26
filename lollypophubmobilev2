@@ -2346,7 +2346,9 @@ Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFram
 end)
 
 MoreSection:NewButton("Teleport to Danger Zone (tile 60)", "teleport to dz",
-function()Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(270.6003723144531, 1995.86083984375, -145.98011779785156)
+function()-- teleport to dzaktually
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-593.0650634765625, 1993.9764404296875,
+-153.38563537597656)
 end)--tptodz
 
 MoreSection:NewButton("Teleport to Start", "teleport to beginning",
