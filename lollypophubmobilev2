@@ -2346,8 +2346,12 @@ Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFram
 end)
 
 MoreSection:NewButton("Teleport to Danger Zone (tile 60)", "teleport to dz",
-function()Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(253.8822479248047, 1995.86083984375, -149.1727752685547)
+function()Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(270.6003723144531, 1995.86083984375, -145.98011779785156)
 end)--tptodz
+
+MoreSection:NewButton("Teleport to Start", "teleport to beginning",
+function()Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(253.8822479248047, 1995.86083984375, -149.1727752685547)
+end)--tptostart
 
 MoreSection:NewButton("Teleport to Winners Room", "teleport to the golden room",
 function()-- teleport to winning room
