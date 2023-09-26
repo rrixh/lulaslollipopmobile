@@ -18,7 +18,7 @@ Text = "lulaslollipop🍭",
 })
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V5.6 | (5.8 broke)","Ocean")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V5.6","Ocean")
 
 ---//yum lollypop hub\\--
 -- LightTheme
@@ -35,7 +35,7 @@ local Window = Library.CreateLib("Lollypop Hub🍭 | V5.6 | (5.8 broke)","Ocean"
 --skripts tab
 local Skripts = Window:NewTab("Skripts")
 local SkriptsSection = Skripts:NewSection("Skript hub by lulaslollipop🍭😋")
-SkriptsSection:NewDropdown("see updates:", "updates here", {"last updated: SEP 26, 2023", "Version: 5.6", "5.8 broke", "added skripts from 5.8"}, function(currentOption)
+SkriptsSection:NewDropdown("NEW:", "updates here", {"last updated: SEP 5, 2023", "Version: 5.6", "15+ games added", "some skripts dont funktion for SW iOS users"}, function(currentOption)
     print(currentOption)
 end)
 
@@ -89,7 +89,7 @@ SkriptsSection:NewButton("Vietnam notifier🚨📢", "will send u a notif if vie
 loadstring(game:HttpGet("https://pastebin.com/raw/C96cg2xG"))()
 end)
 
-SkriptsSection:NewButton("Kokushibo🐤 notifier🚨📢", "will notify u if kokushibo joins",
+SkriptsSection:NewButton("Kokushibo notifier🚨📢", "will notify u if kokushibo joins",
 function()-- kokushibo notifier
 loadstring(game:HttpGet("https://pastebin.com/raw/1hnL2uEj"))()
 end)
@@ -291,22 +291,6 @@ Library.DefaultColor = Color3.fromRGB(50,205,50)
 
 Library:Notification({
     Text = "NIGGAMODE! jk godmode",
-    Duration = 5
-})
-    
-    -- fe brixk toggle press Z 
-loadstring(game:HttpGet("https://pastebin.com/raw/6g3h9cDB"))()
---{[blist.&]}--
-loadstring(game:HttpGet("https://pastebin.com/raw/P1Yrf09M"))()
-end)
-
-SkriptsSection:NewButton("GodMode2", "use this if the regular one doesnt work anymore",
-function()
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
-Library.DefaultColor = Color3.fromRGB(50,205,50)
-
-Library:Notification({
-    Text = "NIGGAMODE! kause the other one dont work",
     Duration = 5
 })
     -- fe brixk toggle press Z 
@@ -2356,7 +2340,7 @@ function()-- teleport to xhest
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-911.98291015625, 2005.8095703125, -149.64857482910156)
 end)
 
-MoreSection:NewButton("Teleport Behind Treasure", "teleport to the xhest",
+MoreSection:NewButton("Teleport to Finish", "teleport to the xhest",
 function()-- teleport behind xhest
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-921.2446899414062, 1995.87255859375, -150.1106719970703)
 end)
@@ -2367,12 +2351,12 @@ Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFram
 -143.97586059570312)
 end)
 
-MoreSection:NewButton("Teleport to Winners Room", "teleport to the xhest",
+MoreSection:NewButton("Teleport to Winners Room", "teleport to the golden room",
 function()-- teleport to winning room
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(314.3387451171875, 17002.197265625, 202.53802490234375)
 end)
 
-MoreSection:NewButton("Sit in the offixe", "sits u in the offixe seat",
+MoreSection:NewButton("Teleport to Offixe Seat", "sits u in the offixe seat",
 function()-- sit in the offixe
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(259.6474304199219, 17004.259765625,
 162.38287353515625)
@@ -2380,17 +2364,12 @@ Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFram
 game.Players.LocalPlayer.Character.Humanoid.Sit = true
 end)
 
-MoreSection:NewButton("UNKNOWN AREA", "teleport to hidden area",
+MoreSection:NewButton("Teleport to Hidden Area", "teleport to unknown area",
 function()-- teleport to hidden 99
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(269.36907958984375, 17024.74609375,
 139.19142150878906)
 end)
---game.Players.LocalPlayers.mg
-loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
---Ctrller.P==kikkil
-loadstring(game:HttpGet("https://pastebin.com/raw/REdW8kfE"))()
---3rdstring%"".<blist#%*^>
-loadstring(game:HttpGet("https://pastebin.com/raw/P1Yrf09M"))()
+
 
 
 
