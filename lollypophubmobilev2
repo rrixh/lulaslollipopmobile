@@ -286,15 +286,7 @@ end)
 
 SkriptsSection:NewButton("GodMode", "no death 99% fail and some obbys",
 function()
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
-Library.DefaultColor = Color3.fromRGB(50,205,50)
-
-Library:Notification({
-    Text = "NIGGAMODE! jk godmode",
-    Duration = 5
-})
-    -- fe brixk toggle press Z 
-loadstring(game:HttpGet("https://pastebin.com/raw/6g3h9cDB"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/RWLVhV4N",true))()
 end)
 
 SkriptsSection:NewButton("GodMode V2", "no death 99% fail and survive kill brixks",
