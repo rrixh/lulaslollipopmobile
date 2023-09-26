@@ -5,7 +5,7 @@
 
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
-    Title = "LOLLYPOPHUB V5.8🍭😋🍭😋",
+    Title = "LOLLYPOPHUB V5.6🍭😋🍭😋",
     Text = "almost every skript in this joint",
     Duration = 8, 
 })
@@ -18,7 +18,7 @@ Text = "lulaslollipop🍭",
 })
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V5.8","Ocean")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V5.6","Ocean")
 
 ---//yum lollypop hub\\--
 -- LightTheme
@@ -2347,8 +2347,9 @@ end)
 
 MoreSection:NewButton("Teleport to Danger Zone", "teleport to the xhest",
 function()-- tp to dz
-Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-707.6163330078125, 1993.9764404296875,
--143.97586059570312)
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(253.8822479248047,
+1995.86083984375
+-149.1727752685547)
 end)
 
 MoreSection:NewButton("Teleport to Winners Room", "teleport to the golden room",
