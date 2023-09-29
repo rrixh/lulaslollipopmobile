@@ -1,11 +1,11 @@
 -- Gui to Lua LOLLYPOPHUB
--- Version: 5.6
+-- Version: 5.8
 -- toggle button added
 -- Instanxes:
 
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
-    Title = "LOLLYPOPHUB V5.6🍭😋🍭😋",
+    Title = "LOLLYPOPHUB v5.8🍭😋🍭😋",
     Text = "almost every skript in this joint",
     Duration = 8, 
 })
@@ -18,7 +18,7 @@ Text = "lulaslollipop🍭",
 })
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V5.6","Midnight")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V5.8","Midnight")
 
 ---//yum lollypop hub\\--
 -- LightTheme
