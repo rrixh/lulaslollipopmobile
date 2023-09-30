@@ -1,13 +1,12 @@
 -- Gui to Lua LOLLYPOPHUB
--- Version: 5.8
+-- Version: 5.9
 -- toggle button added
 -- Instanxes:
 loadstring(game:HttpGet("https://pastebin.com/raw/uNb6892M",true))()
 
-
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
-    Title = "LOLLYPOPHUB v5.8🍭😋🍭😋",
+    Title = "LOLLYPOPHUB v5.9🍭😋🍭😋",
     Text = "almost every skript in this joint",
     Duration = 8
 })
@@ -20,7 +19,7 @@ Text = "lulaslollipop🍭",
 })
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V5.8","Midnight")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V5.9","Midnight")
 
 ---//yum lollypop hub\\--
 -- LightTheme
@@ -37,7 +36,7 @@ local Window = Library.CreateLib("Lollypop Hub🍭 | V5.8","Midnight")
 --skripts tab
 local Skripts = Window:NewTab("Skripts")
 local SkriptsSection = Skripts:NewSection("Skript hub by lulaslollipop🍭😋")
-SkriptsSection:NewDropdown("NEW:", "updates here", {"last updated: SEP 5, 2023", "Version: 5.6", "15+ games added", "some skripts dont funktion for SW iOS users"}, function(currentOption)
+SkriptsSection:NewDropdown("UPDATE:","updates here", {"last updated: SEP 30, 2023", "Version: 5.9", "5+ hubs added(request by emil)", "keybind generators fixed", "if xheru=gay then ban()"}, function(currentOption)
     print(currentOption)
 end)
 
@@ -1503,6 +1502,16 @@ HubSection:NewButton("Multi-Skripter Hub V3", "request by emil", function()
 multi skripter hubv3
 ]]
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Multi-Scripter-X/main/loader"))()
+end)
+
+HubSection:NewButton("British Hub V15", "request by emil", function()
+    --britishhub v15
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RedCoat8102/Britishhub/main/Protected_7002515694901812.lua.txt", true))()
+end)
+
+HubSection:NewButton("Thunder Hub", "request by emil", function()
+    --thunderhub
+loadstring(game:HttpGet('https://pastebin.com/raw/DFjY4nMy'))()
 end)
 
 
