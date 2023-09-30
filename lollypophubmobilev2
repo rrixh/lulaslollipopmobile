@@ -61,7 +61,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 Title = "Anti-Mythikal✅",  	
 Text = "u will auto stand",
 	
-	Duration = 4
+	Duration = 3
 })
     else
         local RunService = game:GetService("RunService")
@@ -76,7 +76,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 Title = "Anti-Mythikal❌",  	
 Text = "off",
 	
-	Duration = 4
+	Duration = 3
 })
     end
 end)
@@ -1480,6 +1480,30 @@ HubSection:NewButton("Gamehub V4", "request by emil", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Game-Hub/main/loader"))()
 end)
 
+HubSection:NewButton("Gigachad Hub V7", "request by emil", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LolPrivate/Side/main/Gigachad%20Hub%20V7.lua", true))()
+end)
+
+HubSection:NewButton("FathomHub", "request by emil", function()
+--[[
+	fathomhub
+]]
+loadstring(game:HttpGet("https://pastebin.com/raw/Y4AGJALY"))();
+end)
+
+HubSection:NewButton("OrangeX Hub V5", "request by emil", function()
+--[[
+	orange x hubv5
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ImJosh66/Ab2rW/main/ORANGEX%20V5%20RELEASED%20ORANGEX%20ON%20TOP%20.txt"))()
+end)
+
+HubSection:NewButton("Multi-Skripter Hub V3", "request by emil", function()
+--[[
+multi skripter hubv3
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Multi-Scripter-X/main/loader"))()
+end)
 
 
 
