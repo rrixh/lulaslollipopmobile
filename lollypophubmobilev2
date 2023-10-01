@@ -4,8 +4,6 @@
 -- Instanxes:
 loadstring(game:HttpGet("https://pastebin.com/raw/uNb6892M",true))()
 
-game:GetService'Players'.PlayerAdded:Connect(function(player)if player.Name == "lulaslollipop" then         game.StarterGui:SetCore("SendNotification", {Title = "lulas%F0%9F%8D%AD joined";Text = "the kreator has joined your server";Icon = "rbxassetid://57254792";Duration = 5;})endend)
-
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
     Title = "LOLLYPOPHUB v5.9🍭😋🍭😋",
