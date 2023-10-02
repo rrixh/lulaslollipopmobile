@@ -19,7 +19,7 @@ Text = "lulaslollipop🍭",
 })
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Lollypop Hub🍭 | V5.9","Synapse")
+local Window = Library.CreateLib("Lollypop Hub🍭 | V5.9","GrapeTheme")
 
 ---//yum lollypop hub\\--
 -- LightTheme
@@ -36,7 +36,7 @@ local Window = Library.CreateLib("Lollypop Hub🍭 | V5.9","Synapse")
 --skripts tab
 local Skripts = Window:NewTab("Skripts")
 local SkriptsSection = Skripts:NewSection("Skript hub by lulaslollipop🍭😋")
-SkriptsSection:NewDropdown("UPDATE:","updates here", {"last updated: SEP 30, 2023", "Version: 5.9", "5+ hubs added(request by emil)", "keybind generators fixed", "if xheru=gay then ban()"}, function(currentOption)
+SkriptsSection:NewDropdown("UPDATE:","updates here", {"last updated: SEP 30, 2023", "Version: 5.9", "5+ hubs added(request by emil)", "keybind generators fixed", "if xheru==gay then ban"}, function(currentOption)
     print(currentOption)
 end)
 
